@@ -1,0 +1,122 @@
+#game-section {
+  text-align: center;
+}
+
+#game-section h1 {
+  color: black;
+  font-family: "Nunito", sans-serif;
+  font-size: 58px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+#game {
+  background-color: white;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 20px;
+}
+
+.game-running {
+  display: flex;
+}
+
+.game-hidden {
+  display: none;
+}
+
+#game-section .grid {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 0;
+}
+
+.easy {
+  grid-template-columns: 50% 50%;
+}
+
+.medium {
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.hard {
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+#game-section .game-card {
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+#game-section .game-card,
+#game-section .back,
+#game-section .front {
+  height: 140px;
+  width: 120px;
+}
+
+#game-section .back,
+#game-section .front {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#game-section .front {
+  background: url("../img/cardback_yellow.png") no-repeat center center / cover;
+}
+
+#game-section .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#game-section .selected {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+#game-section .match {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.game-card {
+  padding: 0;
+}
+
+/*
+  * Clock and guesses
+  */
+body #game-section .trackers {
+  width: 220px;
+  height: 80px;
+  background-color: #fab942;
+  margin: 20px 0 20px 40px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+#jogadas,
+#timer {
+  margin-left: 10px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}

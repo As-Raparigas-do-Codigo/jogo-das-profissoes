@@ -1,10 +1,10 @@
-# jogo-das-profissoes
-
-## Credenciais
-
-Contactem @InêsMartins no WhatsApp
+# Jogo das Profissões
 
 ## Fazer deploy
+
+### Credenciais
+
+Contactem @InêsMartins no WhatsApp
 
 ### Opção 1 -> WebDisk (funciona)
 

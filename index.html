@@ -29,32 +29,37 @@
   </head>
 
   <body>
+    <header class="header container-fluid" id="header">
+      <div class="header-content">
+        <div class="logo"></div>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="#main-section"
+                >Início</a
+              >
+            </li>
+            <li><a class="nav-link scrollto" href="#project">Profissões</a></li>
+            <li><a class="nav-link scrollto" href="#contacts">Contactos</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+
     <!-- ======= Main Section ======= -->
     <section id="main-section" class="intro">
-      <header class="header">
-        <div class="header-content">
-          <nav class="navbar">
-            <ul>
-              <li><a class="nav-link scrollto" href="#hero">Início</a></li>
-              <li><a class="nav-link scrollto" href="#projeto">Projecto</a></li>
-              <li>
-                <a class="nav-link scrollto" href="#contactos">Contactos</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-5 offset-lg-1 pt-5 pb-3">
+          <div class="col-lg-5 pt-5 pb-3">
             <h1>Jogo das Profissões</h1>
-            <h2>
+            <p class="intro-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               tempore ipsum, delectus aspernatur saepe aut molestias dolore
               dolorem consequuntur fugit laudantium obcaecati inventore qui
               alias rerum harum voluptates culpa.
-            </h2>
-            <button type="button" id="start" class="start-button">
+            </p>
+            <button type="button" id="start" class="start-button shadow">
               Jogar<i class="rocket"></i>
             </button>
           </div>
@@ -67,13 +72,13 @@
     <!-- End Main -->
 
     <!-- ======= Job Section ======= -->
-    <section id="main-section">
+    <section id="project">
       <div class="container-fluid">
         <!--<div class="row d-flex align-items-center">-->
         <div class="row d-flex">
           <div class="col-md-1"></div>
           <div class="col-lg-4 py-5 py-lg-0 order-2 order-lg-1">
-            <div class="card">
+            <div class="card shadow">
               <div class="slides">
                 <div slide-id="1" class="slide active">
                   <div class="thumbnail">
@@ -201,9 +206,8 @@
             </div>
           </div>
           <div class="col-lg-7 py-5 order-1 order-lg-2">
-            <h1 style="padding-top: 0.6em">Jogo das</h1>
-            <h1>Profissões</h1>
-            <h2 style="padding-right: 3em; text-align: justify">
+            <h2>Jogo das Profissões</h2>
+            <p class="about-text">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
               tempora reprehenderit a quis iste, laudantium, explicabo facere
               adipisci, quasi modi ducimus magni neque veniam itaque fugiat
@@ -212,7 +216,7 @@
               aspernatur saepe aut molestias dolore dolorem consequuntur fugit
               laudantium obcaecati inventore qui alias rerum harum voluptates
               culpa.
-            </h2>
+            </p>
           </div>
         </div>
       </div>
@@ -241,6 +245,9 @@
         <span id="jogadas">0</span>
       </div>
     </section>
+
+    <!-- ======= Contacts ======= -->
+    <section id="contacts">Contacts placeholder</section>
 
     <!-- ======= Footer ======= -->
     <footer class="footer"></footer>

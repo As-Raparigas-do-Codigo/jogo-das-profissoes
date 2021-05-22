@@ -1,235 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Jogo das Profissões</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Jogo das Profissões</title>
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
+    <!-- Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet" />
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Job Cards CSS File -->
+    <link rel="stylesheet" href="assets/css/job-cards.css" />
 
-  <!-- Job Cards CSS File -->
-  <link rel="stylesheet" href="assets/css/job-cards.css" />
+    <link rel="stylesheet" href="assets/css/game.css" />
+  </head>
 
-  <link rel="stylesheet" href="assets/css/game.css" />
-
-</head>
-
-<body>
-  <!-- ======= Main Section ======= -->
-  <section id="main-section" class="banner">
-    <header class="header">
-      <div class="header-content">
-        <nav class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto" href="#hero">Início</a></li>
-            <li><a class="nav-link scrollto" href="#projeto">Projecto</a></li>
-            <li>
-              <a class="nav-link scrollto" href="#contactos">Contactos</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="container-fluid">
-      <div class="row d-flex align-items-center">
-        <div class="col-lg-5 offset-lg-1 pt-5 pb-3">
-          <h1>Jogo das Profissões</h1>
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            tempore ipsum, delectus aspernatur saepe aut molestias dolore
-            dolorem consequuntur fugit laudantium obcaecati inventore qui
-            alias rerum harum voluptates culpa.
-          </h2>
-          <button type="button" id="start" class="start-button">
-            Jogar<i class="rocket"></i>
-          </button>
+  <body>
+    <!-- ======= Main Section ======= -->
+    <section id="main-section" class="intro">
+      <header class="header">
+        <div class="header-content">
+          <nav class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="#hero">Início</a></li>
+              <li><a class="nav-link scrollto" href="#projeto">Projecto</a></li>
+              <li>
+                <a class="nav-link scrollto" href="#contactos">Contactos</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
-    </div>
-    </div>
-
-  </section>
-  <!-- End Main -->
-
-
-  <!-- ======= Job Section ======= -->
-  <section id="main-section">
-    <div class="container-fluid">
-      <!--<div class="row d-flex align-items-center">-->
-      <div class="row d-flex">
-        <div class="col-md-1"></div>
-        <div class="col-lg-4 py-5 py-lg-0 order-2 order-lg-1">
-          <div class="card">
-            <div class="slides">
-              <div slide-id="1" class="slide active">
-                <div class="thumbnail">
-                  <img class="front" src="assets/img/jobs/astronauta.png" />
-                </div>
-                <h1 class="title">Matilde, Astronauta</h1>
-                <p class="description">
-                  A Matilde sempre teve a cabeça na lua. A verdade é que ela adorava o espaço. Agora viaja num foguetão
-                  gigante e vê todos os planetas e as estrelas!
-                </p>
-              </div>
-              <div slide-id="2" class="slide">
-                <div class="thumbnail">
-                  <img class="front" src="assets/img/jobs/ceo.png" />
-                </div>
-                <h1 class="title">Rita, Empresária</h1>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-              <div slide-id="3" class="slide">
-                <div class="thumbnail">
-                  <img class="front" src="assets/img/jobs/babysitter.png" />
-                </div>
-                <h1 class="title">Mário, Babysitter</h1>
-                <p class="description">
-                  O Mário é muito bom a cuidar de bebés! Às vezes eles choram e têm fraldas mal-cheirosas, mas ele faz
-                  tudo ficar melhor com as suas histórias de embalar!
-                </p>
-              </div>
-              <div slide-id="4" class="slide">
-                <div class="thumbnail">
-                  <img class="front" src="assets/img/jobs/bailarino.png" />
-                </div>
-                <h1 class="title">Miguel, Bailarino</h1>
-                <p class="description">
-                  O Miguel adora dançar! Pratica muito todos os dias e até já dançou num palco grande, à frente de
-                  muitas pessoas! Todos adoraram e bateram muitas palmas!
-                </p>
-              </div>
-              <div slide-id="5" class="slide">
-                <div class="thumbnail">
-                  <img class="front" src="assets/img/jobs/futebolista.png" />
-                </div>
-                <h1 class="title">Luísa, Futebolista</h1>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-              <div slide-id="6" class="slide">
-                <div class="thumbnail">
-                  <img class="front" src="assets/img/jobs/veterinario.png" />
-                </div>
-                <h1 class="title">Martim, Veterinário</h1>
-                <p class="description">
-                  O Martim adora animais e cuida deles quando estão doentes. Todos os dias vê cães e gatos, mas um dia
-                  até cuidou de um leão que tinha partido uma pata!
-                </p>
-              </div>
-              <div slide-id="7" class="slide">
-                <div class="thumbnail">
-                  <img class="front" src="assets/img/jobs/piloto.png" />
-                </div>
-                <h1 class="title">Paula, Piloto</h1>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-              <div slide-id="8" class="slide">
-                <div class="thumbnail">
-                  <img class="front" src="assets/img/jobs/professor.png" />
-                </div>
-                <h1 class="title">Hugo, Professor</h1>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-              <div slide-id="9" class="slide">
-                <div class="thumbnail">
-                  <img class="front" src="assets/img/jobs/engenheira.png" />
-                </div>
-                <h1 class="title">Joana, Engenheira</h1>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-              </div>
-              <div slide-id="10" class="slide">
-                <div class="thumbnail">
-                  <img class="front" src="assets/img/jobs/enfermeiro.png" />
-                </div>
-                <h1 class="title">Tiago, Enfermeiro</h1>
-                <p class="description">
-                  O Tiago sabe sempre como cuidar das outras pessoas! Dos meninos traquinas quando caem e se magoam, dos
-                  crescidos quando vão ao hospital, e até salva vidas!
-                </p>
-              </div>
-            </div>
-            <div class="card-links">
-              <a id="prev" href="#" ripple="" ripple-color="#666666" class="btn">Anterior</a><a id="next" href="#"
-                ripple="" ripple-color="#666666" class="btn">Próximo</a>
-            </div>
+      </header>
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-5 offset-lg-1 pt-5 pb-3">
+            <h1>Jogo das Profissões</h1>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              tempore ipsum, delectus aspernatur saepe aut molestias dolore
+              dolorem consequuntur fugit laudantium obcaecati inventore qui
+              alias rerum harum voluptates culpa.
+            </h2>
+            <button type="button" id="start" class="start-button">
+              Jogar<i class="rocket"></i>
+            </button>
           </div>
         </div>
-        <div class="col-lg-7 py-5 order-1 order-lg-2">
-          <h1 style="padding-top: 0.6em">Jogo das</h1>
-          <h1>Profissões</h1>
-          <h2 style="padding-right: 3em; text-align: justify">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
-            tempora reprehenderit a quis iste, laudantium, explicabo facere
-            adipisci, quasi modi ducimus magni neque veniam itaque fugiat
-            voluptatibus assumenda doloribus? Vitae? Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Maxime tempore ipsum, delectus
-            aspernatur saepe aut molestias dolore dolorem consequuntur fugit
-            laudantium obcaecati inventore qui alias rerum harum voluptates
-            culpa.
-          </h2>
+      </div>
+      <div class="intro-img-wrapper">
+        <img class="intro-img" src="../assets/img/animaçao-small.gif" />
+      </div>
+    </section>
+    <!-- End Main -->
+
+    <!-- ======= Job Section ======= -->
+    <section id="main-section">
+      <div class="container-fluid">
+        <!--<div class="row d-flex align-items-center">-->
+        <div class="row d-flex">
+          <div class="col-md-1"></div>
+          <div class="col-lg-4 py-5 py-lg-0 order-2 order-lg-1">
+            <div class="card">
+              <div class="slides">
+                <div slide-id="1" class="slide active">
+                  <div class="thumbnail">
+                    <img class="front" src="assets/img/jobs/astronauta.png" />
+                  </div>
+                  <h1 class="title">Matilde, Astronauta</h1>
+                  <p class="description">
+                    A Matilde sempre teve a cabeça na lua. A verdade é que ela
+                    adorava o espaço. Agora viaja num foguetão gigante e vê
+                    todos os planetas e as estrelas!
+                  </p>
+                </div>
+                <div slide-id="2" class="slide">
+                  <div class="thumbnail">
+                    <img class="front" src="assets/img/jobs/ceo.png" />
+                  </div>
+                  <h1 class="title">Rita, Empresária</h1>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div slide-id="3" class="slide">
+                  <div class="thumbnail">
+                    <img class="front" src="assets/img/jobs/babysitter.png" />
+                  </div>
+                  <h1 class="title">Mário, Babysitter</h1>
+                  <p class="description">
+                    O Mário é muito bom a cuidar de bebés! Às vezes eles choram
+                    e têm fraldas mal-cheirosas, mas ele faz tudo ficar melhor
+                    com as suas histórias de embalar!
+                  </p>
+                </div>
+                <div slide-id="4" class="slide">
+                  <div class="thumbnail">
+                    <img class="front" src="assets/img/jobs/bailarino.png" />
+                  </div>
+                  <h1 class="title">Miguel, Bailarino</h1>
+                  <p class="description">
+                    O Miguel adora dançar! Pratica muito todos os dias e até já
+                    dançou num palco grande, à frente de muitas pessoas! Todos
+                    adoraram e bateram muitas palmas!
+                  </p>
+                </div>
+                <div slide-id="5" class="slide">
+                  <div class="thumbnail">
+                    <img class="front" src="assets/img/jobs/futebolista.png" />
+                  </div>
+                  <h1 class="title">Luísa, Futebolista</h1>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div slide-id="6" class="slide">
+                  <div class="thumbnail">
+                    <img class="front" src="assets/img/jobs/veterinario.png" />
+                  </div>
+                  <h1 class="title">Martim, Veterinário</h1>
+                  <p class="description">
+                    O Martim adora animais e cuida deles quando estão doentes.
+                    Todos os dias vê cães e gatos, mas um dia até cuidou de um
+                    leão que tinha partido uma pata!
+                  </p>
+                </div>
+                <div slide-id="7" class="slide">
+                  <div class="thumbnail">
+                    <img class="front" src="assets/img/jobs/piloto.png" />
+                  </div>
+                  <h1 class="title">Paula, Piloto</h1>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div slide-id="8" class="slide">
+                  <div class="thumbnail">
+                    <img class="front" src="assets/img/jobs/professor.png" />
+                  </div>
+                  <h1 class="title">Hugo, Professor</h1>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div slide-id="9" class="slide">
+                  <div class="thumbnail">
+                    <img class="front" src="assets/img/jobs/engenheira.png" />
+                  </div>
+                  <h1 class="title">Joana, Engenheira</h1>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div slide-id="10" class="slide">
+                  <div class="thumbnail">
+                    <img class="front" src="assets/img/jobs/enfermeiro.png" />
+                  </div>
+                  <h1 class="title">Tiago, Enfermeiro</h1>
+                  <p class="description">
+                    O Tiago sabe sempre como cuidar das outras pessoas! Dos
+                    meninos traquinas quando caem e se magoam, dos crescidos
+                    quando vão ao hospital, e até salva vidas!
+                  </p>
+                </div>
+              </div>
+              <div class="card-links">
+                <a
+                  id="prev"
+                  href="#"
+                  ripple=""
+                  ripple-color="#666666"
+                  class="btn"
+                  >Anterior</a
+                ><a
+                  id="next"
+                  href="#"
+                  ripple=""
+                  ripple-color="#666666"
+                  class="btn"
+                  >Próximo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 py-5 order-1 order-lg-2">
+            <h1 style="padding-top: 0.6em">Jogo das</h1>
+            <h1>Profissões</h1>
+            <h2 style="padding-right: 3em; text-align: justify">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+              tempora reprehenderit a quis iste, laudantium, explicabo facere
+              adipisci, quasi modi ducimus magni neque veniam itaque fugiat
+              voluptatibus assumenda doloribus? Vitae? Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Maxime tempore ipsum, delectus
+              aspernatur saepe aut molestias dolore dolorem consequuntur fugit
+              laudantium obcaecati inventore qui alias rerum harum voluptates
+              culpa.
+            </h2>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ======= Game Section ======= -->
-  <section id="game-section">
-    <h1>O Jogo das Profissões</h1>
-    <div id="game" class="game-hidden"></div>
+    <!-- ======= Game Section ======= -->
+    <section id="game-section">
+      <h1>O Jogo das Profissões</h1>
+      <div id="game" class="game-hidden"></div>
 
-    <div id="difficulty">
-      <h3>Escolhe o nível de dificuldade:</h3>
-      <button id="easy">Easy</button>
-      <button id="medium">Medium</button>
-      <button id="hard">Hard</button>
-    </div>
-    <div>
-      <button id="reset">Reset</button>
-    </div>
-    <div class="trackers">
-      <i class="far fa-clock"></i>
-      <span id="timer">00:00</span>
-    </div>
-    <div class="trackers">
-      <i class="far fa-hand-pointer"></i>
-      <span id="jogadas">0</span>
-    </div>
-  </section>
+      <div id="difficulty">
+        <h3>Escolhe o nível de dificuldade:</h3>
+        <button id="easy">Easy</button>
+        <button id="medium">Medium</button>
+        <button id="hard">Hard</button>
+      </div>
+      <div>
+        <button id="reset">Reset</button>
+      </div>
+      <div class="trackers">
+        <i class="far fa-clock"></i>
+        <span id="timer">00:00</span>
+      </div>
+      <div class="trackers">
+        <i class="far fa-hand-pointer"></i>
+        <span id="jogadas">0</span>
+      </div>
+    </section>
 
+    <!-- ======= Footer ======= -->
+    <footer class="footer"></footer>
 
-  <!-- ======= Footer ======= -->
-  <footer class="footer"></footer>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <!-- Job Cards JS Files -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="assets/js/job-cards.js"></script>
-  <script src="assets/js/game.js"></script>
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <!-- Job Cards JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/job-cards.js"></script>
+    <script src="assets/js/game.js"></script>
+  </body>
 </html>

@@ -340,15 +340,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.banner {
-  background-image: url("../img/header.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top right;
+.intro {
   min-height: 760px;
   height: auto;
 }
 
+.intro-img-wrapper {
+  position:absolute;
+  top:0;
+  right:0;
+  z-index: 20;
+}
+
+.intro-img {
+  width: 600px;
+  mask-image: url(../img/mask.svg);
+  -webkit-mask-image: url(../img/mask.svg);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 600px;
+  -webkit-mask-size: 600px;
+}
 
 .start-button {
   display: flex;

@@ -1,16 +1,3 @@
-/*body {
-    background: #D18B49;
-    color: rgba(0, 0, 0, 0.6);
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 1.6em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-  }
-  */
-
 .btn {
   border-radius: 2px;
   padding: 8px 12px;
@@ -24,12 +11,10 @@
 }
 
 .card {
-  background: #ffffff;
   max-width: 400px;
   margin: 50px auto;
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  box-sizing: border-box;
+  border: none;
   padding: 48px;
   text-align: center;
   font-family: "Nunito", sans-serif;
@@ -40,8 +25,6 @@
   overflow: hidden;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  /*height: 300px;*/
-  /*width: 150px;*/
 }
 
 h1.title {

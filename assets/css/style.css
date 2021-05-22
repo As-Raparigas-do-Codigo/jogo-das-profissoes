@@ -8,9 +8,13 @@
 
 /* Basic page style resets */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Nunito", sans-serif;
-  color: var(--color-text-primary);
+  font-family: "Nunito", sans-serif !important;
+  color: var(--color-text-primary) !important;
 }
 
 a {
@@ -25,6 +29,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
+  color: var(--color-text-secondary);
 }
 
 /*--------------------------------------------------------------
@@ -75,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-content {
   display: flex;
   justify-content: flex-end;
-
+  padding: 10px 70px;
 }
 
 /*--------------------------------------------------------------
@@ -86,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
   padding: 0;
-  /*margin-left: 7.5em;*/
+  z-index: 50;
 }
 
 .navbar ul {
@@ -107,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   padding: 10px 20px 10px 0px;
   font-size: 1.4em;
-  color: #333333;
+  color: var(--white);
   white-space: nowrap;
   transition: 0.3s;
   font-family: "Nunito", sans-serif;
@@ -126,7 +131,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .getstarted {
-  /*background: #213b52;*/
   color: var(--white);
   padding: 4px 25px 6px 25px;
   margin-left: 30px;
@@ -323,25 +327,23 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 0 0 0;
 }
 
-#main-section h1 {
+.intro h1 {
   margin: 0 0 15px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #333333;
-  font-family: "Poppins", sans-serif;
 }
 
-#main-section h2 {
-  color: #828282;
+.intro-text,
+.about-text {
+  color: var(--color-text-primary);
   margin-bottom: 30px;
   font-size: 22px;
-  font-family: "Nunito", sans-serif;
 }
 
 
 .intro {
-  min-height: 760px;
+  min-height: 800px;
   height: auto;
 }
 
@@ -353,15 +355,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro-img {
-  width: 600px;
+  width: 700px;
   mask-image: url(../img/mask.svg);
   -webkit-mask-image: url(../img/mask.svg);
   mask-position: center;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  mask-size: 600px;
-  -webkit-mask-size: 600px;
+  mask-size: 700px;
+  -webkit-mask-size: 700px;
 }
+
+@media (min-width: 1440px) {
+  .intro-img {
+    width: 800px;
+    mask-image: url(../img/mask.svg);
+    -webkit-mask-image: url(../img/mask.svg);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: 800px;
+    -webkit-mask-size: 800px;
+  }
+
+  .intro {
+    min-height: 850px;
+  }
+}
+
 
 .start-button {
   display: flex;
@@ -389,41 +409,6 @@ h1, h2, h3, h4, h5, h6 {
   animation-iteration-count: infinite;
 }
 
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
 
 #main-section .btn-get-started:hover {
   background: transparent;
@@ -465,58 +450,6 @@ h1, h2, h3, h4, h5, h6 {
   #main-section .hero-img img {
     width: 80%;
   }
-}
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-.section-bg {
-  background: linear-gradient(180deg, #f2f6fa 0%, var(--white) 100%);
-}
-
-.section-title {
-  padding-bottom: 30px;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  color: #213b52;
-}
-
-.section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
-
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #fdc134;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
-
-.section-title p {
-  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -580,6 +513,60 @@ section {
   }
 }
 
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.footer {
+  background-image: url("../img/footer-new.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 300px;
+  margin: 0 !important;
+}
+
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -596,17 +583,4 @@ section {
   100% {
     transform: rotate(360deg);
   }
-}
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-
-.footer {
-  background-image: url("../img/footer-new.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top left;
-  height: 300px;
-  margin: 0 !important;
 }

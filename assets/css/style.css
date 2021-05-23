@@ -514,6 +514,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Contacts Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+h6.contacts {
+  color: var(--color-text-secondary) !important;
+  
+}
+
+img.logo-initiative {
+  width: 100%;
+  height: 100%;
+  /*border: 1px solid black;*/
+}
+
+img.logo-dev {
+  width: 42%;
+  height: 42%;
+  /*border: 1px solid black;*/
+  margin: 0 0.5em;
+}
+
+img.logo-support {
+  width: 23%;
+  height: 42%;
+  margin: 0.2em 0.5em;
+  /*border: 1px solid black;*/
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 

@@ -11,10 +11,10 @@
 }
 
 #game {
-  background-color: white;
+  /*background-color: white;*/
   justify-content: center;
-  margin: 30px 0;
-  padding: 20px;
+  /*margin: 30px 0;*/
+  /*padding: 20px;*/
 }
 
 .game-running {
@@ -23,6 +23,12 @@
 
 .game-hidden {
   display: none;
+}
+.trackers-hidden{
+  display: none;
+}
+.difficulty-hidden{
+  display:none;
 }
 
 #game-section .grid {
@@ -57,8 +63,8 @@
 #game-section .game-card,
 #game-section .back,
 #game-section .front {
-  height: 140px;
-  width: 120px;
+  height: 160px;
+  width: 140px;
 }
 
 #game-section .back,
@@ -93,13 +99,48 @@
 .game-card {
   padding: 0;
 }
+/*Difficulty levels*/
+h3{
+  margin: 20px;
+}
+.difficulty{
+  width: 140px;
+  height: 50px;
+  background-color: var(--color-primary);
+  margin: 20px 0 20px 40px;
+  border-radius: 4px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  padding: 10px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.difficulty button{
+  border: 0;
+  height: 50px;
+  background-color: var(--color-primary);
+}
+
+.center-levels{
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 
 /*
   * Clock and guesses
   */
-body #game-section .trackers {
-  width: 220px;
-  height: 80px;
+body #game-section .trackers
+{
+  width: 140px;
+  height: 50px;
   background-color: var(--color-primary);
   margin: 20px 0 20px 40px;
   border-radius: 4px;
@@ -108,7 +149,7 @@ body #game-section .trackers {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 #jogadas,
@@ -117,4 +158,9 @@ body #game-section .trackers {
   width: 75%;
   display: flex;
   justify-content: center;
+}
+.trackers button{
+  border: 0;
+  height: 50px;
+  background-color: var(--color-primary);
 }

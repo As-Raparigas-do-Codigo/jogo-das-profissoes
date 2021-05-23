@@ -207,6 +207,12 @@ $(document).ready(function() {
         game.classList.add('game-running')
         game.classList.remove('game-hidden')
 
+        let trackers = document.querySelector('#trackers')
+        trackers.classList.remove('trackers-hidden');
+
+        let difficulty = document.querySelector('#difficulty');
+        difficulty.classList.add('difficulty-hidden');
+
         let gameGrid = document.querySelector('#game-section .grid')
         gameGrid.classList.remove('easy', 'medium', 'hard')
         gameGrid.classList.add(level)

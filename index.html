@@ -33,7 +33,7 @@
   </head>
 
   <body>
-    <header class="header container-fluid" id="header">
+    <header class="header container-fluid d-none d-lg-block" id="header">
       <div class="header-content">
         <div class="logo"></div>
         <nav id="navbar" class="navbar">
@@ -43,7 +43,9 @@
                 >Início</a
               >
             </li>
-            <li><a class="nav-link scrollto" href="#job-section">Profissões</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#job-section">Profissões</a>
+            </li>
             <li><a class="nav-link scrollto" href="#project">Projeto</a></li>
             <li><a class="nav-link scrollto" href="#contacts">Contactos</a></li>
           </ul>
@@ -53,74 +55,66 @@
     </header>
 
     <!-- ======= Main Section ======= -->
-    <section id="main-section" class="intro">
+    <section id="main-section" class="intro mb-5">
+      <div class="intro-img-wrapper">
+        <img class="intro-img" src="../assets/img/animaçao-small.gif" />
+      </div>
       <div class="container">
-        <div class="row d-flex align-items-center pt-3">
-          <div class="col-lg-5 pt-5 pb-3">
-            <h1>Jogo das<br>Profissões</h1>
+        <div class="row d-flex align-items-center">
+          <div class="col-xs-12 col-lg-6 pb-3">
+            <h1 class="pt-5">Jogo das<br />Profissões</h1>
             <p class="intro-text">
-              Quando fores grande, o que queres ser? <br> 
-              Há tantas profissões para conhecer! <br>
-              Vira as cartas bem depressa <br>
-              E terás uma surpresa! <br>
-              Quantos pares irás encontrar? <br> Carrega no botão e vamos jogar!              
+              Quando fores grande, o que queres ser? <br />
+              Há tantas profissões para conhecer! <br />
+              Vira as cartas bem depressa <br />
+              E terás uma surpresa! <br />
+              Quantos pares irás encontrar? <br />
+              Carrega no botão e vamos jogar!
             </p>
-            <button onclick="location.href = 'game.html';" type="button" id="start" class="start-button shadow">
+            <button
+              onclick="location.href = 'game.html';"
+              type="button"
+              id="start"
+              class="start-button shadow"
+            >
               <span class="play-button">Jogar</span><i class="rocket"></i>
             </button>
           </div>
         </div>
       </div>
-      <div class="intro-img-wrapper">
-        <img class="intro-img" src="../assets/img/animaçao-small.gif" />
-      </div>
     </section>
     <!-- End Main -->
 
     <!-- ======= Job Section ======= -->
-    <section id="job-section">
+    <section id="job-section" class="pt-5 mb-5">
       <div class="container">
-        <div class="row d-flex align-items-center">
-          <div class="col-lg-7 py-5">
-            <h2 class="job-title">As Profissões</h2><br>
-            <p class="about-text">
-              Quando for grande, o que quero ser? <br>
-              Astronauta, para viajar num foguetão! <br>
-              Ou pilota, a comandar um avião! <br>
-              Também gosto de jogar futebol <br>
-              E dançar até me doerem os pés <br>
-              Será que gostaria de cuidar de bebés? <br>
-              E se fosse veterinário, para ajudar animais? <br>
-              Ou enfermeiro, para cuidar dos demais <br>
-              Podia ser empresária e viajar por todo o mundo! <br>
-              Ou engenheira! Fazia casas num segundo! <br>
-              Posso ser professor, e ensinar as crianças a ler <br>
-              São tantas as profissões, e todas posso escolher!
-            </p>
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="heading">As Profissões</h2>
           </div>
-          <div class="col-lg-5 py-5 py-lg-0 order-2 order-lg-1">
-            <div class="card shadow">
+          <div class="col-xs-12 col-lg-5 offset-lg-1 py-5 py-lg-0">
+            <div class="card shadow mx-auto">
               <div class="slides">
                 <div slide-id="1" class="slide active">
-                  <div class="thumbnail">
-                    <img class="front" src="assets/img/jobs/astronauta.png" />
-                  </div>
-                  <h1 class="title">Matilde, Astronauta</h1>
-                  <p class="description">
-                    A Matilde era a mais distraída da rua. 
-                    A mãe dizia que tinha a cabeça na lua. 
-                    Agora viaja no seu foguetão e tem as estrelas na palma da mão.
-                  </p>
-                </div>
-                <div slide-id="2" class="slide">
                   <div class="thumbnail">
                     <img class="front" src="assets/img/jobs/ceo.png" />
                   </div>
                   <h1 class="title">Rita, Empresária</h1>
                   <p class="description">
-                    A Rita sabe negociar. Passa muito tempo a viajar! 
-                    Vendia limonada na rua. 
-                    Agora que é crescida, tem uma empresa que é sua!
+                    A Rita sabe negociar. Passa muito tempo a viajar! Vendia
+                    limonada na rua. Agora que é crescida, tem uma empresa que é
+                    sua!
+                  </p>
+                </div>
+                <div slide-id="2" class="slide">
+                  <div class="thumbnail">
+                    <img class="front" src="assets/img/jobs/astronauta.png" />
+                  </div>
+                  <h1 class="title">Matilde, Astronauta</h1>
+                  <p class="description">
+                    A Matilde era a mais distraída da rua. A mãe dizia que tinha
+                    a cabeça na lua. Agora viaja no seu foguetão e tem as
+                    estrelas na palma da mão.
                   </p>
                 </div>
                 <div slide-id="3" class="slide">
@@ -129,8 +123,9 @@
                   </div>
                   <h1 class="title">Mário, Babysitter</h1>
                   <p class="description">
-                    O Mário adora cuidar de bebés. E dá-lhes banho da cabeça aos pés. 
-                    Quando um bebé está a chorar, o Mário conta histórias de embalar.
+                    O Mário adora cuidar de bebés. E dá-lhes banho da cabeça aos
+                    pés. Quando um bebé está a chorar, o Mário conta histórias
+                    de embalar.
                   </p>
                 </div>
                 <div slide-id="4" class="slide">
@@ -139,8 +134,9 @@
                   </div>
                   <h1 class="title">Marcelino, Bailarino</h1>
                   <p class="description">
-                    O Marcelino sempre quis ser bailarino. Adora dançar e passa os dias a praticar! 
-                    Faz piruetas sem cair no chão e dança ao ritmo de qualquer canção.
+                    O Marcelino sempre quis ser bailarino. Adora dançar e passa
+                    os dias a praticar! Faz piruetas sem cair no chão e dança ao
+                    ritmo de qualquer canção.
                   </p>
                 </div>
                 <div slide-id="5" class="slide">
@@ -149,9 +145,9 @@
                   </div>
                   <h1 class="title">Luísa, Futebolista</h1>
                   <p class="description">
-                    Corre depressa como uma chita e só para quando o árbitro apita! 
-                    Em qualquer equipa, todos querem a Luísa. 
-                    Quando chuta a bola, vai direta à baliza!
+                    Corre depressa como uma chita e só para quando o árbitro
+                    apita! Em qualquer equipa, todos querem a Luísa. Quando
+                    chuta a bola, vai direta à baliza!
                   </p>
                 </div>
                 <div slide-id="6" class="slide">
@@ -160,8 +156,9 @@
                   </div>
                   <h1 class="title">Martim, Veterinário</h1>
                   <p class="description">
-                    O Martim adora animais. Cuida deles quando estão doentes! 
-                    No consultório trata cães, gatos e muito mais. Até leões com dor de dentes!
+                    O Martim adora animais. Cuida deles quando estão doentes! No
+                    consultório trata cães, gatos e muito mais. Até leões com
+                    dor de dentes!
                   </p>
                 </div>
                 <div slide-id="7" class="slide">
@@ -170,9 +167,9 @@
                   </div>
                   <h1 class="title">Paula, Pilota</h1>
                   <p class="description">
-                    A Paula desde criança que anda a sonhar em ver o mundo inteiro a voar. 
-                    Já foi à China e até ao Japão. 
-                    E gostava de ter o seu próprio avião!
+                    A Paula desde criança que anda a sonhar em ver o mundo
+                    inteiro a voar. Já foi à China e até ao Japão. E gostava de
+                    ter o seu próprio avião!
                   </p>
                 </div>
                 <div slide-id="8" class="slide">
@@ -181,9 +178,9 @@
                   </div>
                   <h1 class="title">Hugo, Professor</h1>
                   <p class="description">
-                    O Hugo achava que os números deixavam as crianças tontas! 
-                    Hoje mostra que é fácil fazer contas. 
-                    Com muita prática, ensina Matemática.
+                    O Hugo achava que os números deixavam as crianças tontas!
+                    Hoje mostra que é fácil fazer contas. Com muita prática,
+                    ensina Matemática.
                   </p>
                 </div>
                 <div slide-id="9" class="slide">
@@ -192,9 +189,9 @@
                   </div>
                   <h1 class="title">Joana, Engenheira</h1>
                   <p class="description">
-                    A Joana brincava às casinhas quando tinha a tua idade! 
-                    Agora faz casas para pessoas de verdade! 
-                    Protegem do calor e de qualquer tempestade. 
+                    A Joana brincava às casinhas quando tinha a tua idade! Agora
+                    faz casas para pessoas de verdade! Protegem do calor e de
+                    qualquer tempestade.
                   </p>
                 </div>
                 <div slide-id="10" class="slide">
@@ -203,9 +200,9 @@
                   </div>
                   <h1 class="title">Tiago, Enfermeiro</h1>
                   <p class="description">
-                    O Tiago sabe cuidar, se uma criança se aleijar. 
-                    Ajuda o avô se ele cair, e põe toda a gente a sorrir. 
-                    Salva vidas sem hesitar, é uma pessoa com quem podemos contar.
+                    O Tiago sabe cuidar, se uma criança se aleijar. Ajuda o avô
+                    se ele cair, e põe toda a gente a sorrir. Salva vidas sem
+                    hesitar, é uma pessoa com quem podemos contar.
                   </p>
                 </div>
               </div>
@@ -228,12 +225,28 @@
               </div>
             </div>
           </div>
+          <div class="col-xs-12 col-lg-6 py-5 py-lg-0">
+            <p class="about-text">
+              Quando for grande, o que quero ser? <br />
+              Astronauta, para viajar num foguetão! <br />
+              Ou pilota, a comandar um avião! <br />
+              Também gosto de jogar futebol <br />
+              E dançar até me doerem os pés <br />
+              Será que gostaria de cuidar de bebés? <br />
+              E se fosse veterinário, para ajudar animais? <br />
+              Ou enfermeiro, para cuidar dos demais <br />
+              Podia ser empresária e viajar por todo o mundo! <br />
+              Ou engenheira! Fazia casas num segundo! <br />
+              Posso ser professor, e ensinar as crianças a ler <br />
+              São tantas as profissões, e todas posso escolher!
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ======= Game Section ======= -->
-   <!--  <section id="game-section">
+    <!--  <section id="game-section">
       <h1>O Jogo das Profissões</h1>
       <div id="game" class="game-hidden"></div>
 
@@ -257,46 +270,33 @@
     </section> -->
 
     <!-- ======= Project Section ======= -->
-    <section id="project">
+    <section id="project" class="py-5">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-12 py-5">
-            <h2 class="job-title">Porquê?</h2><br>
+          <div class="col-lg-12">
+            <h2 class="heading">Porquê?</h2>
+            <br />
             <p class="project-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Incidunt quisquam distinctio, natus aspernatur fuga doloribus 
-              assumenda suscipit ipsam quos repellendus ipsum modi unde itaque 
-              accusantium in enim cupiditate magnam dolore.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Incidunt quisquam distinctio, natus aspernatur fuga doloribus 
-              assumenda suscipit ipsam quos repellendus ipsum modi unde itaque 
-              accusantium in enim cupiditate magnam dolore.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Incidunt quisquam distinctio, natus aspernatur fuga doloribus 
-              assumenda suscipit ipsam quos repellendus ipsum modi unde itaque 
-              accusantium in enim cupiditate magnam dolore.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Incidunt quisquam distinctio, natus aspernatur fuga doloribus 
-              assumenda suscipit ipsam quos repellendus ipsum modi unde itaque 
-              accusantium in enim cupiditate magnam dolore.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Incidunt quisquam distinctio, natus aspernatur fuga doloribus 
-              assumenda suscipit ipsam quos repellendus ipsum modi unde itaque 
-              accusantium in enim cupiditate magnam dolore.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Incidunt quisquam distinctio, natus aspernatur fuga doloribus 
-              assumenda suscipit ipsam quos repellendus ipsum modi unde itaque 
-              accusantium in enim cupiditate magnam dolore.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Incidunt quisquam distinctio, natus aspernatur fuga doloribus 
-              assumenda suscipit ipsam quos repellendus ipsum modi unde itaque 
-              accusantium in enim cupiditate magnam dolore.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              quisquam distinctio, natus aspernatur fuga doloribus assumenda
+              suscipit ipsam quos repellendus ipsum modi unde itaque accusantium
+              in enim cupiditate magnam dolore. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Incidunt quisquam distinctio, natus
+              aspernatur fuga doloribus assumenda suscipit ipsam quos
+              repellendus ipsum modi unde itaque accusantium in enim cupiditate
+              magnam dolore. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Incidunt quisquam distinctio, natus aspernatur fuga
+              doloribus assumenda suscipit ipsam quos repellendus ipsum modi
+              unde itaque accusantium in enim cupiditate magnam dolore. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              quisquam distinctio, natus aspernatur fuga doloribus assumenda
+              suscipit ipsam quos repellendus ipsum modi unde itaque accusantium
+              in enim cupiditate magnam dolore.
             </p>
           </div>
         </div>
       </div>
     </section>
-
 
     <!-- ======= Contacts ======= -->
     <!-- TODO: Add contact link to images (website/instagram) -->
@@ -309,7 +309,11 @@
             </div>
             <div class="row pt-4">
               <div class="col px-0">
-                <img class="logo-initiative" src="assets/img/logos/secretaria_estado.png" alt="">
+                <img
+                  class="logo-initiative"
+                  src="assets/img/logos/secretaria_estado.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -319,8 +323,16 @@
             </div>
             <div class="row pt-3 align-items-center">
               <div class="col d-flex justify-content-center">
-                <img class="logo-dev" src="assets/img/logos/ardc-v2.png" alt="">
-                <img class="logo-dev" src="assets/img/logos/designer.jpg" alt="">
+                <img
+                  class="logo-dev"
+                  src="assets/img/logos/ardc-v2.png"
+                  alt=""
+                />
+                <img
+                  class="logo-dev"
+                  src="assets/img/logos/designer.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -330,16 +342,31 @@
             </div>
             <div class="row pt-3 align-items-center">
               <div class="col d-flex justify-content-center align-items-center">
-                <img class="logo-support" src="assets/img/logos/wit.png" alt="">
-                <img class="logo-support" src="assets/img/logos/ces.jpg" alt="">
-                <img class="logo-support" src="assets/img/logos/ironhack.png" alt="">
-                <img class="logo-support" src="assets/img/logos/dns_pt/dns_pt_preto.png" alt="">
+                <img
+                  class="logo-support"
+                  src="assets/img/logos/wit.png"
+                  alt=""
+                />
+                <img
+                  class="logo-support"
+                  src="assets/img/logos/ces.jpg"
+                  alt=""
+                />
+                <img
+                  class="logo-support"
+                  src="assets/img/logos/ironhack.png"
+                  alt=""
+                />
+                <img
+                  class="logo-support"
+                  src="assets/img/logos/dns_pt/dns_pt_preto.png"
+                  alt=""
+                />
               </div>
             </div>
-
           </div>
-
         </div>
+      </div>
     </section>
 
     <!-- ======= Footer ======= -->

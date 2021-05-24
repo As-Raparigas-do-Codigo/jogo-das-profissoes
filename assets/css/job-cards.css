@@ -6,11 +6,6 @@
   --color-primary: #FDC435;
 }
 
-h2.job-title {
-  font-size: 48px;
-  font-weight: 700;
-}
-
 .btn {
   border-radius: 2px;
   padding: 8px 12px;
@@ -25,10 +20,8 @@ h2.job-title {
 
 .card {
   max-width: 400px;
-  margin: 50px auto;
   border-radius: 12px;
   border: none;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   padding: 48px;
   text-align: center;
   font-family: "Nunito", sans-serif;

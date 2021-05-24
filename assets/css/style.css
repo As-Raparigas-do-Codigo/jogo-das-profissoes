@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Intro Section
 --------------------------------------------------------------*/
 #main-section {
   width: 100%;
@@ -460,6 +460,17 @@ span.play-button {
   }
 }
 
+
+/*--------------------------------------------------------------
+# Project
+--------------------------------------------------------------*/
+.project-text {
+  color: var(--color-text-primary);
+  margin-bottom: 30px;
+  font-size: 18px;
+  text-align: justify;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -561,7 +572,7 @@ img.logo-support {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top left;
-  height: 300px;
+  height: 350px;
   margin: 0 !important;
 }
 

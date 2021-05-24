@@ -332,6 +332,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
+  padding-top: 70px;
+  /*border: 1px solid black;*/
 }
 
 .intro-text,
@@ -396,10 +398,16 @@ h1, h2, h3, h4, h5, h6 {
   place-items: center;
 }
 
+span.play-button {
+  font-size: 1.4em;
+  font-weight: 400;
+  /*border: 1px solid black;*/
+}
+
 .rocket {
   width: 60px;
   height: 34px;
-  margin-left: 20px;
+  margin-left: 10px;
   background: url("../img/rocket.png") right center no-repeat;
   background-size: 60px;
 }

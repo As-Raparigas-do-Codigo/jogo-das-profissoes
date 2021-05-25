@@ -6,23 +6,32 @@
 
     <!-- Primary Meta Tags -->
     <title>Jogo das Profissões</title>
-    <meta name="title" content="Jogo das Profissões">
-    <meta name="description" content="Descobre as várias profissões neste divertido jogo da memória">
+    <meta name="title" content="Jogo das Profissões" />
+    <meta
+      name="description"
+      content="Descobre as várias profissões neste divertido jogo da memória"
+    />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website" />
     <!-- TODO:  <meta property="og:url" content="https://metatags.io/"> -->
-    <meta property="og:title" content="Jogo das Profissões">
-    <meta property="og:description" content="Descobre as várias profissões neste divertido jogo da memória">
+    <meta property="og:title" content="Jogo das Profissões" />
+    <meta
+      property="og:description"
+      content="Descobre as várias profissões neste divertido jogo da memória"
+    />
     <!--TODO: <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"> -->
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:card" content="summary_large_image" />
     <!-- TODO:  <meta property="twitter:url" content="https://metatags.io/"> -->
-    <meta property="twitter:title" content="Jogo das Profissões">
-    <meta property="twitter:description" content="Descobre as várias profissões neste divertido jogo da memória">
+    <meta property="twitter:title" content="Jogo das Profissões" />
+    <meta
+      property="twitter:description"
+      content="Descobre as várias profissões neste divertido jogo da memória"
+    />
     <!--TODO: <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"> -->
-    
+
     <!-- Favicons -->
     <link
       rel="apple-touch-icon"
@@ -272,28 +281,63 @@
     </section>
 
     <!-- ======= Game Section ======= -->
-    <!--  <section id="game-section">
-      <h1>O Jogo das Profissões</h1>
-      <div id="game" class="game-hidden"></div>
-
-      <div id="difficulty">
-        <h3>Escolhe o nível de dificuldade:</h3>
-        <button id="easy">Easy</button>
-        <button id="medium">Medium</button>
-        <button id="hard">Hard</button>
+    
+      <section id="game-section">
+        <div class="container">
+          <div class="row center-levels">
+            <div class="col-12">
+              <div id="difficulty">
+                <h3>Escolhe o nível de dificuldade:</h3>
+  
+                <div class="difficulty">
+                  <button id="easy">Easy</button>
+                </div>
+                <div class="difficulty">
+                  <button id="medium">Medium</button>
+                </div>
+                <div class="difficulty">
+                  <button id="hard">Hard</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-md-10">
+              <div id="game" class="game-hidden"></div>
+            </div>
+            <div class="col-md-2 col-sm-6">
+              <div class="trackers-hidden" id="trackers">
+                <div class="trackers">
+                  <i class="far fa-clock"></i>
+                  <span id="timer">00:00</span>
+                </div>
+                <div class="trackers">
+                  <i class="far fa-hand-pointer"></i>
+                  <span id="jogadas">0</span>
+                </div>
+                <div class="trackers">
+                  <button id="reset">Reset</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <div id="popup_jogo" class="overlay">
+        <div class="popup">
+          <h2>Parabéns 🎉</h2>
+          <div class="content-1">Parabéns, ganhaste o jogo!! 🎉🎉</div>
+          <div class="content-2">
+            <p>Jogadas: <span id="finalJogadas"> </span></p>
+            <p>Tempo: <span id="finalTempo"> </span></p>
+          </div>
+          <button id="play-again" onclick="playAgain()">Jogar de novo 😄</button>
+        </div>
       </div>
-      <div>
-        <button id="reset">Reset</button>
-      </div>
-      <div class="trackers">
-        <i class="far fa-clock"></i>
-        <span id="timer">00:00</span>
-      </div>
-      <div class="trackers">
-        <i class="far fa-hand-pointer"></i>
-        <span id="jogadas">0</span>
-      </div>
-    </section> -->
+  
+    </section>
 
     <!-- ======= Project Section ======= -->
     <section id="project" class="py-5">

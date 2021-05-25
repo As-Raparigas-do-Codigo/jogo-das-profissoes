@@ -235,18 +235,6 @@ body #game-section .trackers
   max-width: 1400px;
 }
 
-.grid {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-}
-
-@media only screen and (max-width: 1200px) {
-  .grid {
-    grid-template-columns: 25% 25% 25% 25%;
-  }
-}
-
 .card {
   position: relative;
   -webkit-transition: all .4s linear;
@@ -359,21 +347,6 @@ body .trackers {
 	margin-top: 0;
 	color: #333;
 	font-family: Tahoma, Arial, sans-serif;
-}
-
-.popup .close {
-	position: absolute;
-	top: 20px;
-	right: 30px;
-	transition: all 200ms;
-	font-size: 30px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #333;
-}
-
-.popup .close:hover {
-	color: #E5F720;
 }
 
 .popup .content-1,

@@ -129,6 +129,10 @@ h3{
   font-size: 30px;
 }
 
+.difficulty span {
+  pointer-events: none;
+}
+
 /*
   * Clock and guesses
   */

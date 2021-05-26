@@ -211,7 +211,7 @@ difficulty.addEventListener('click', function (event) {
     let difficulty = document.querySelector('#difficulty');
     difficulty.classList.add('difficulty-hidden');
 
-    let gameGrid = document.querySelector('#game-section .grid')
+    let gameGrid = document.querySelector('#jogo .grid')
     gameGrid.classList.remove('easy', 'medium', 'hard')
     gameGrid.classList.add(level)
 

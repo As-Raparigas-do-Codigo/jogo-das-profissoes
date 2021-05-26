@@ -20,7 +20,7 @@
 }
 
 .difficulty-hidden{
-  display:none;
+  display:none !important;
 }
 
 #game-section .grid {

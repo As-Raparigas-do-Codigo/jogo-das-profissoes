@@ -86,12 +86,10 @@ grid.addEventListener('click', function (event) {
     if (count === 1) {
       firstGuess = clicked.parentNode.dataset.name;
 
-      console.log(firstGuess);
       clicked.parentNode.classList.add('selected');
     } else {
       secondGuess = clicked.parentNode.dataset.name;
 
-      console.log(secondGuess);
       clicked.parentNode.classList.add('selected');
       jogadas++;
       changeJogadas();
@@ -112,6 +110,10 @@ grid.addEventListener('click', function (event) {
 
 
 var startGame = function startGame() {
+
+  let gameSection = document.querySelector("#js-game-section");
+  gameSection.classList.add("hidden");
+  gameSection.classList.add("active");
   var shuffledArray = cardsArray.sort(() => 0.5 - Math.random());
   var selectedArray = shuffledArray.slice(0, cardsByLevel[level]);
 
@@ -148,7 +150,6 @@ var startGame = function startGame() {
 */
 // TODO: Adicionar lógico de fim de jogo (animação)
 var endGame = function endGame() {
-  console.log('End Game');
   var finalJogadas = document.getElementById('finalJogadas');
   finalJogadas.innerHTML = jogadas;
   var finalTempo = document.getElementById('finalTempo');
@@ -167,15 +168,13 @@ var checkEndGame = function checkEndGame() {
   } else {
     console.log(matches + ' matches');
   }
-
 }
 
 /*
 * Reset
 */
 var resetButton = document.getElementById('reset');
-resetButton.addEventListener('click', function (event) {
-  console.log('reset');
+resetButton.addEventListener('click', function () {
   gameSetup();
 });
 
@@ -185,9 +184,9 @@ resetButton.addEventListener('click', function (event) {
 */
 var level = 'easy';
 var cardsByLevel = {
-  'easy': 2,
+  'easy': 3,
   'medium': 6,
-  'hard': 10
+  'hard': 9
 }
 var delayByLevel = {
   'easy': 1200,
@@ -197,7 +196,6 @@ var delayByLevel = {
 
 var difficulty = document.getElementById('difficulty');
 difficulty.addEventListener('click', function (event) {
-  console.log('difficulty');
   var clicked = event.target;
 
   if (clicked.id === 'easy' || clicked.id === 'medium' || clicked.id === 'hard') {
@@ -291,14 +289,15 @@ function playAgain() {
   modal.classList.remove("show");
   let difficulty = document.querySelector('#difficulty');
   difficulty.classList.remove('difficulty-hidden');
-  let game = document.querySelector('#game')
+  let game = document.querySelector('#game');
   game.classList.remove('game-running')
   game.classList.add('game-hidden')
   let trackers = document.querySelector('#trackers')
   trackers.classList.add('trackers-hidden');
-  // clearTimeout(interval);
+  let gameSection = document.querySelector("#js-game-section");
+  gameSection.classList.remove("hidden");
+  gameSection.classList.remove("active");
   interval = "";
-  console.log(interval)
   grid.innerHTML = "";
   resetMatches();
   resetJogadas();
@@ -306,11 +305,6 @@ function playAgain() {
   // startTimer();
 
   //gameSetup();
-  console.log("First Guess:" + firstGuess);
-  console.log("Second Guess:" + secondGuess);
-  console.log("Count:" + count);
-  console.log("Matches:" + matches);
-  console.log("Previous Target:" + previousTarget);
 }
 
 function gameSetup() {

@@ -95,11 +95,11 @@
 h3 {
     margin: 20px;
 }
+
 .difficulty-container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0 20px;
     border-radius: 5px;
-    max-width: 700px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -160,6 +160,14 @@ h3 {
 
 .trackers-hidden {
     display: none;
+}
+
+.change-game-btns {
+    display: flex;
+}
+
+.change-game-btns button:first-of-type {
+    margin-right: 20px;
 }
 
 .button-secondary {

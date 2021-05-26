@@ -110,8 +110,9 @@ h3{
 
 .difficulty-wrapper {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 .difficulty{

@@ -240,27 +240,58 @@ h3 {
     opacity: 1;
 }
 
+#popup_jogo {
+    align-items: center;
+}
+
 .popup {
     margin: 70px auto;
-    padding: 20px;
+    padding: 40px;
     background: #ffffff;
     border-radius: 5px;
-    width: 85%;
+    width: 60%;
+    height: 335px;
     position: relative;
     transition: all 5s ease-in-out;
     z-index: 100;
 }
 
 .popup h2 {
-    margin-top: 0;
-    color: #333;
+    margin: 10px 0 30px;
 }
 
 .popup .content-1,
 .content-2 {
-    max-height: 30%;
     overflow: auto;
     text-align: center;
+}
+
+.popup .content-1 p {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.popup .content-1 p * {
+    width: 50%;
+    text-align: right;
+}
+
+.popup .content-1 p *:last-child {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.popup img {
+    height: 90%;
+    position: absolute;
+    left: -100px;
+    top: 30px;
+}
+
+.popup img:last-of-type {
+    right: -100px;
+    left: auto;
 }
 
 .overlay:target {
@@ -269,7 +300,7 @@ h3 {
 }
 
 .show {
-    display: block;
+    display: flex;
     opacity: 100 !important;
 }
 

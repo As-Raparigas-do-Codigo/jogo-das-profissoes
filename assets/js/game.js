@@ -170,6 +170,17 @@ var checkEndGame = function checkEndGame() {
   }
 }
 
+const getTwoRandomJobs = () => {
+  const popupJobImg = document.querySelectorAll(".js-popup-job");
+
+  popupJobImg.forEach(
+    img => {
+      const randomImg = cardsArray[Math.floor(Math.random() * cardsArray.length)].img
+      img.src = `${randomImg.split('.png')[0]}_border.png`
+    }
+  )
+}
+
 /*
 * Reset
 */
@@ -280,6 +291,9 @@ function resetMatches() {
 * Modal
 */
 function showModal() {
+  // Pick two job images at random
+  getTwoRandomJobs()
+
   let modal = document.getElementById("popup_jogo");
   modal.classList.add("show");
 }

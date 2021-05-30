@@ -381,6 +381,7 @@ h6 {
     color: var(--color-text-primary);
     font-size: 24px;
     line-height: 36px;
+    text-align: justify;
 }
 
 .intro {
@@ -537,38 +538,81 @@ h6.contacts {
     color: var(--color-text-secondary) !important;
 }
 
-img.logo-initiative {
-    width: 100%;
+img.logo-seci {
+    width: 130%;
     height: 100%;
-    /*border: 1px solid black;*/
 }
 
-img.logo-dev {
-    width: 42%;
-    height: 42%;
-    /*border: 1px solid black;*/
-    margin: 0 0.5em;
+img.logo-wit {
+    width: 80%;
+    height: 60%;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+img.logo-ardc {
+    margin-top: 10px;
+    width: 80%;
+    height: 80%;
+    margin-right: 10px;
+}
+
+img.logo-designer {
+    margin-top: 10px;
+    width: 80%;
+    height: 80%;
+    margin-left: 10px;
+}
+
+img.logo-ces {
+    width: 110%;
+    height: 80%;
+    margin-top: 10px;
+    margin-left: 65px;
+    margin-right: 15px;
 }
 
 img.logo-support {
-    width: 23%;
-    height: 42%;
-    margin: 0.2em 0.5em;
-    /*border: 1px solid black;*/
+    width: 100%;
+    height: 100%;
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
 .footer {
     background-image: url("../img/footer-new.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
-    height: 350px;
+    height: 400px;
     margin: 0 !important;
+    position: absolute;
+    width: 100%;
 }
+
+.footer-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    height: 60px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.copy-logo {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+
+/*--------------------------------------------------------------
+# Copyright
+--------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------
 # Animations

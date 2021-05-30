@@ -123,6 +123,7 @@ h3 {
     border: 0;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     padding: 10px;
+    margin: 0 5px;
     display: inline;
     justify-content: center;
     align-items: center;

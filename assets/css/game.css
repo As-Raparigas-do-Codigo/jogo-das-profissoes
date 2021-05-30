@@ -320,7 +320,7 @@ h3 {
 
 .game-section:before {
     content: "";
-    background: url("../img/gameboard.PNG") center center;
+    background: url("../img/gameboard.png") center center;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;

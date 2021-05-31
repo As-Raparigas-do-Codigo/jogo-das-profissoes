@@ -329,3 +329,13 @@ function gameSetup() {
   startTimer();
 }
 
+function playAgainLevels() {
+  clearTimeout(interval);
+  playAgain();
+  // resetTimer();
+  // startTimer();
+  //gameSetup();
+}
+
+
+

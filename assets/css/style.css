@@ -384,6 +384,10 @@ h6 {
     text-align: justify;
 }
 
+.indented {
+    text-indent: 50px;
+}
+
 .intro {
     min-height: 800px;
     height: auto;
@@ -547,7 +551,7 @@ img.logo-wit {
     width: 80%;
     height: 60%;
     margin-top: 25px;
-    margin-left: 40px;
+    margin-left: 35px;
 }
 
 img.logo-ardc {

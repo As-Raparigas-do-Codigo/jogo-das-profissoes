@@ -4,10 +4,10 @@
 var cardsArray = [{
   'name': 'astronauta',
   'img': 'assets/img/jobs/astronauta.png'
-}, {
+}, /*{
   'name': 'babysitter',
   'img': 'assets/img/jobs/babysitter.png'
-}, {
+},*/ {
   'name': 'bailarino',
   'img': 'assets/img/jobs/bailarino.png'
 }, {

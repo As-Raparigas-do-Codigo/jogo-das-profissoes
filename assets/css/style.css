@@ -542,6 +542,10 @@ h6.contacts {
     color: var(--color-text-secondary) !important;
 }
 
+.contacts-wrapper {
+  gap: 20px;
+}
+
 img.logo-seci {
     width: 130%;
     height: 100%;
@@ -551,21 +555,18 @@ img.logo-wit {
     width: 80%;
     height: 60%;
     margin-top: 25px;
-    margin-left: 35px;
 }
 
 img.logo-ardc {
     margin-top: 10px;
     width: 80%;
     height: 80%;
-    margin-right: 10px;
 }
 
 img.logo-designer {
     margin-top: 10px;
     width: 80%;
     height: 80%;
-    margin-left: 10px;
 }
 
 img.logo-ces {
@@ -589,16 +590,15 @@ img.logo-support {
     background-position: top left;
     height: 400px;
     margin: 0 !important;
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
 .footer-text {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     width: 100%;
     text-align: right;
-    height: 60px;
     text-align: center;
     font-size: 16px;
     color: black;

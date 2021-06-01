@@ -41,6 +41,14 @@
     grid-template-columns: repeat(6, 1fr);
 }
 
+@media screen and (max-width: 768px) {
+ .hard,
+ .medium,
+ .easy {
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 #jogo .game-card {
     position: relative;
     -webkit-transition: all 0.4s linear;
@@ -98,18 +106,18 @@ h3 {
 
 .difficulty-container {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 0 20px;
+    padding: 20px;
     border-radius: 5px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    height: 300px;
+    min-height: 300px;
     flex-direction: column;
     justify-content: center;
 }
 
 .difficulty-wrapper {
-    display: flex;
+    display: flex;   
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
@@ -140,9 +148,24 @@ h3 {
 
 .trackers-wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin: 40px;
+}
+
+.trackers-display {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .trackers-display{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .trackers {
+    margin-bottom: 20px;
+  }
 }
 
 .trackers {
@@ -199,6 +222,12 @@ h3 {
     margin: 0 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .game {
+    margin: 0;
+  }
+}
+
 .selected {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -252,7 +281,7 @@ h3 {
     background: #ffffff;
     border-radius: 5px;
     width: 60%;
-    height: 335px;
+    min-height: 335px;
     position: relative;
     transition: all 5s ease-in-out;
     z-index: 100;
@@ -292,9 +321,28 @@ h3 {
 }
 
 .popup img:last-of-type {
-    right: -100px;
-    left: auto;
+  right: -100px;
+  left: auto;
 }
+
+@media screen and (max-width: 768px) {
+  .popup {
+    width: 100%;
+  }
+
+  .popup img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .popup img:last-of-type {
+    right: 0;
+  }
+}
+
 
 .overlay:target {
     visibility: visible;

@@ -13,4 +13,4 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Obrigada por submeteres um issue!'
-        pr-message: 'Parabéns! Este é o primeiro Pull Request de muitos :)!'
+        pr-message: 'Parabéns! Este é o primeiro Pull Request de muitos :)'

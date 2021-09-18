@@ -1,7 +1,7 @@
 ---
 name: Bug Report
 about: Create a bug report to help us identify and fix a bugs
-
+labels: bug
 ---
 
 ### Description

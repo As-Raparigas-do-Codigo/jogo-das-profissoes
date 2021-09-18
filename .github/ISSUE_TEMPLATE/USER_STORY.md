@@ -1,5 +1,5 @@
 ---
-name: User story
+name: User Story
 about: Create your development plans and work tasks here.
 
 ---
@@ -15,6 +15,3 @@ so that I can [ACCOMPLISH THAT].-->
 ## Acceptance Criteria
 
 - [ ] [LIST ITEMS]
-
-## Estimation
-<!--[INSERT NUMBER HERE] hours-->

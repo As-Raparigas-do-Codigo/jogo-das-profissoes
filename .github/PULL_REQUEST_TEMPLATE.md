@@ -1,20 +1,20 @@
-### Description
+### Descrição
 
-<!-- Include a summary of the change and relevant motivation/context. List any dependencies that are required for this change. -->
+<!-- Inclui um resumo das alterações e motivação / contexto relevante. Lista todas as dependências necessárias para essa mudança. -->
 
-<!-- XXXX is the issue number -->
+<!-- XXXX é o numero da tarefa/issue - isto é para quando fizermos merge desta alteração fechar a issue original automaticamente -->
 Fixes #XXXX
 
 
-### Test plan
+### Como testar esta modificação?
 
-<!-- Describe the tests you ran to verify your changes. Provide instructions or GIFs so we can reproduce. List any relevant details for your test. -->
+<!-- Descreve os testes que executaste para verificar tuas alterações. Diz-nos as instruções ou GIFs para que possamos reproduzir. Lista todos os detalhes relevantes para o teu teste. -->
 
 
 ### Checklist:
 
-<!-- **Delete irrelevant options.** -->
+<!-- **Apaga as opções irrelevantes.** -->
 
-- [ ] My PR follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code or materials
-- [ ] I have made corresponding changes to the documentation
+- [ ] O meu PR segue as regras de estilo de código deste projeto
+- [ ] Eu fiz uma autoavaliação (review) do meu próprio código ou materiais
+- [ ] Eu fiz as alterações correspondentes na documentação

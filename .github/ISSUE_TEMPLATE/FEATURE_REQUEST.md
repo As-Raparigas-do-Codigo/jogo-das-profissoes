@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: Sugerir nova funcionalidade
 about: Propõe uma ideia para o projeto
 
 ---

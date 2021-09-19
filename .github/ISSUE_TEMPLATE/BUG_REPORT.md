@@ -1,13 +1,13 @@
 ---
-name: Bug Report
-about: Cria um bug report para nos ajudar a identificar e resolver bugs
+name: Reportar um bug
+about: Cria um relatório de bug para nos ajudar a identificar e resolver bugs
 labels: bug
 ---
 
-### Descrição
+## Descrição
 <!--Uma descrição clara e concisa do que é o bug.-->
 
-### Como reproduzir
+## Como reproduzir
 
 Passos para reproduzir o comportamento:
 1. Vai para '...'
@@ -23,27 +23,27 @@ Passos para reproduzir o comportamento:
 
 <!-- Diz-nos o que acontece em vez do comportamento esperado -->
 
-### Capturas de ecrã
+## Capturas de ecrã
 
 <!-- Se aplicável, adiciona capturas de ecrã para ajudar a explicar seu problema. --> 
 
-### Contexto
+## Contexto
 
 <!-- Se aplicável, descreve o dispositivo e / ou as características do navagador/browser onde viste o bug -->
 
 <!-- Apaga isto se não for aplicável -->
 
-#### Desktop:
+### Desktop:
  - Sistema operativo: [e.g. iOS]
  - Browser [e.g. chrome, safari]
  - Versão [e.g. 22]
 
-#### Smartphone:
+### Smartphone:
  - Dispositivo: [e.g. iPhone6]
  - Sistema operativo: [e.g. iOS8.1]
  - Browser [e.g. stock browser, safari]
  - Versão [e.g. 22]
 
-### Mais informação
+## Mais informação
 
 <!-- Adiciona qualquer outro contexto sobre o problema aqui. -->

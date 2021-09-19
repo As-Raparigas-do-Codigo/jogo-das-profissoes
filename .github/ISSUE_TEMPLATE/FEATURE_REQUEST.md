@@ -1,17 +1,17 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: Propõe uma ideia para o projeto
 
 ---
 
-### Is your feature request related to a problem? Please describe.
-<!--A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]-->
+### Esta sugestão de funcionalidade está relacionada a um problema?
+<!-- Uma descrição clara e concisa de qual é o problema. -->
 
-### Describe the solution you'd like
-<!--A clear and concise description of what you want to happen.-->
+### Descreve a solução que achas apropriado
+<!-- Uma descrição do que achas que devia acontecer. -->
 
-### Describe alternatives you've considered
-<!--A clear and concise description of any alternative solutions or features you've considered.-->
+### Descreve alternativas que consideraste
+<!-- Uma descrição clara e concisa de quaisquer soluções ou opções alternativas que consideraste. -->
 
-### Additional context
-<!--Add any other context or screenshots about the feature request here.-->
+### Contexto adicional
+<!-- Adiciona qualquer outro contexto ou capturas de ecrã sobre a ideia/funcionalidade que estás a sugerir. -->

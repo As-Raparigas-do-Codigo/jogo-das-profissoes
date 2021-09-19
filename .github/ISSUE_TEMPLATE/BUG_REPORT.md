@@ -1,43 +1,49 @@
 ---
 name: Bug Report
-about: Create a bug report to help us identify and fix a bugs
+about: Cria um bug report para nos ajudar a identificar e resolver bugs
 labels: bug
 ---
 
-### Description
-<!--A clear and concise description of what the bug is.-->
+### Descrição
+<!--Uma descrição clara e concisa do que é o bug.-->
 
-### Steps to Reproduce
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '...'
-3. Scroll down to '...'
+### Como reproduzir
+
+Passos para reproduzir o comportamento:
+1. Vai para '...'
+2. Clica em '...'
+3. Faz scroll para baixo até '...'
 4. ...
 
-## Expected Behavior
-<!--A clear and concise description of what you expected to happen.-->
+## Comportamento Esperado
 
-## Current Behavior
-<!--- Tell us what happens instead of the expected behavior -->
+<!-- Uma descrição clara e concisa do que esperavas que acontecesse-->
 
-### Screenshots
-<!--If applicable, add screenshots to help explain your problem.-->
+## Comportamento Atual
 
-### Context (Environment)
+<!-- Diz-nos o que acontece em vez do comportamento esperado -->
 
-<!--If applicable, decribe the device and/or browser chareteristics where you notice the bug-->
+### Capturas de ecrã
 
-<!-- Delete these if not applicable-->
+<!-- Se aplicável, adiciona capturas de ecrã para ajudar a explicar seu problema. --> 
+
+### Contexto
+
+<!-- Se aplicável, descreve o dispositivo e / ou as características do navagador/browser onde viste o bug -->
+
+<!-- Apaga isto se não for aplicável -->
+
 #### Desktop:
- - OS: [e.g. iOS]
+ - Sistema operativo: [e.g. iOS]
  - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+ - Versão [e.g. 22]
 
 #### Smartphone:
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
+ - Dispositivo: [e.g. iPhone6]
+ - Sistema operativo: [e.g. iOS8.1]
  - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+ - Versão [e.g. 22]
 
-### Additional context
-<!--Add any other context about the problem here.-->
+### Mais informação
+
+<!-- Adiciona qualquer outro contexto sobre o problema aqui. -->

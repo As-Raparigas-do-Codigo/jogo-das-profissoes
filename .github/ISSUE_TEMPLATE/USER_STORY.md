@@ -1,17 +1,21 @@
 ---
 name: User Story
-about: Create your development plans and work tasks here.
+about: Ajuda-nos a criar novas tarefas para a comunidade ajudar a melhorar o projeto.
 
 ---
 
-## Description
+## Descrição
 <!--As a [USER],
 I need [TO DO THIS],
 so that I can [ACCOMPLISH THAT].-->
 
 ## Mocks
-<!--[INSERT RELEVANT PNG FILE]-->
 
-## Acceptance Criteria
+<!-- Adiciona mocks/imagens de como a funcionalidade deve ficar no final da tarefa -->
 
-- [ ] [LIST ITEMS]
+## Critérios de Aceitação
+
+<!-- Lista os critérios -->
+
+- [ ] critério 1
+- [ ] critério 2

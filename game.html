@@ -35,40 +35,26 @@
       </div>
     </header>
 
-    
-
     <!-- ======= Game Section ======= -->
     <section id="game-section">
-
-      
-
-
       <div class="container">
-
-
-
         <div class="row center-levels">
           <div class="col-12">
-            <div  id="difficulty">
+            <div id="difficulty">
               <h3>Escolhe o nível de dificuldade:</h3>
 
-
-                <div class="difficulty">
-                  <button id="easy">Easy</button>
-                </div>
-                <div class="difficulty">
-                  <button id="medium">Medium</button>
-                </div>
-                <div class="difficulty">
-                  <button id="hard">Hard</button>
-                </div>
-
-
+              <div class="difficulty">
+                <button id="easy">Easy</button>
+              </div>
+              <div class="difficulty">
+                <button id="medium">Medium</button>
+              </div>
+              <div class="difficulty">
+                <button id="hard">Hard</button>
+              </div>
             </div>
           </div>
         </div>
-
-
 
         <div class="row">
           <div class="col-md-10">
@@ -89,36 +75,21 @@
               </div>
             </div>
           </div>
-          
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-
-
-     
-
-
-
     </section>
 
-
+    <div id="popup_jogo" class="overlay">
+      <div class="popup">
+        <h2>Parabéns 🎉</h2>
+        <div class="content-1">Parabéns, ganhaste o jogo!! 🎉🎉</div>
+        <div class="content-2">
+          <p>Jogadas: <span id="finalJogadas"> </span></p>
+          <p>Tempo: <span id="finalTempo"> </span></p>
+        </div>
+        <button id="play-again" onclick="playAgain()">Jogar de novo 😄</button>
+      </div>
+    </div>
 
     <!-- ======= Footer ======= -->
     <!-- <footer class="footer">

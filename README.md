@@ -2,7 +2,11 @@
 
 ### Descrição
 
-TODO
+O "[Jogo das Profissões](https://jogodasprofissoes.pt/)" nasceu da necessidade de, desde cedo, desconstruir os preconceitos relacionados com o mundo das profissões e demonstrar que não há cargos só para homens ou só para mulheres. 
+
+Esta iniciativa reuniu várias entidades que, conjuntamente e voluntariamente procuraram disponibilizar um jogo simples, interativo, inclusivo e educativo para toda a comunidade infantil e respetivas famílias.
+
+-----
 
 <details>
   <summary>Note to non-Portuguese Speaking Contributors</summary>

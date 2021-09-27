@@ -25,7 +25,7 @@ Thank you!
 - Quando terminares o teu trabalho faz um Pull Request (PR) para o repositório original - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
 - Quando criares o novo PR:
  - podes ver as alterações no ambiente de preview (link de Netlify)
- - podes ver o resultado da análise do linter na tab de "Actions"
+ - podes ver o resultado da análise do linter na tab de "[Actions](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/actions)"
 
 ### Intruções para correr o projeto
 

@@ -4,23 +4,20 @@
 
 O "[Jogo das Profissões](https://jogodasprofissoes.pt/)" nasceu da necessidade de, desde cedo, desconstruir os preconceitos relacionados com o mundo das profissões e demonstrar que não há cargos só para homens ou só para mulheres. 
 
-Esta iniciativa reuniu várias entidades que, conjuntamente e voluntariamente procuraram disponibilizar um jogo simples, interativo, inclusivo e educativo para toda a comunidade infantil e respetivas famílias.
+Esta iniciativa reuniu várias entidades que, conjuntamente e voluntariamente procuraram disponibilizar um jogo da memória simples, interativo, inclusivo e educativo para toda a comunidade infantil e respetivas famílias.
 
 -----
 
 <details>
-  <summary>Note to non-Portuguese Speaking Contributors</summary>
-This project was made open source in order to encourage contributions from Portuguese students enrolled in the "[As Raparigas do Código](https://raparigasdocodigo.pt/)" project.
-And as such, will be mostly written in Portuguese.
-However, if you'd like to contribute, we will accept PRs not written in portugues, with an English code source.
-Thank you!
+  <summary>Note for non-Portuguese Speaking Contributors</summary>
+  This project was made open source in order to encourage contributions from Portuguese students enrolled in the "As Raparigas do Código" project and, as such, will be mostly written in Portuguese. 
+
+  However, if you'd like to contribute, we will accept PRs not written in portugues, with an English code source. 
+  
+  Thank you!
 </details>
 
 ### Como contribuir
-
-**Importante**
-
-Lembra-te que não precisas apenas de resolver issues já identificados, podes também sugerir novas funcionalidades, reportar bugs, e dizer-nos caso tenhas ideias para o projecto, através da criação de um novo [Issue](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/issues).
 
 1. Faz comentário no issue que queres resolver; um dos mentores fará assign desse issue ao utilizador com o primeiro comentário;
     - Nesse comentário dá uma pequena previsão de quando vais conseguir começar a resolver o problema, e se precisas de ajuda, para que possamos garantir que os issues não são abandonados;
@@ -37,6 +34,10 @@ Lembra-te que não precisas apenas de resolver issues já identificados, podes t
 7. O teu PR será revisto por um dos mentores, e contará como uma contribuição para o Hacktoberfest se:
     - for "merged"; ou
     - tiver tag "hacktoberfest-accepted"
+
+**Importante**
+
+Lembramos que não precisas apenas de resolver issues já identificados, podes também sugerir novas funcionalidades, reportar bugs, e dizer-nos caso tenhas ideias para o projecto, através da criação de um novo [Issue](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/issues).
 
 **Nota**
 

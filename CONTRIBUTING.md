@@ -22,8 +22,11 @@
     - Tenta escrever mensagens descritivas, ex.: "adiciona botão azul à página inicial"
 5. Quando terminares o teu trabalho faz um Pull Request (PR) para o repositório original - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
 6. Quando criares o novo PR:
-    - podes ver as alterações no ambiente de preview
-    - podes ver o resultado da análise do linter na tab de "[Actions](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/actions)"
+    - podes ver as alterações no ambiente de preview gerado pelo Netlify -> clicka no link e vê como é que o site vai ficar com a tua alteração
+
+![Screenshot 2021-09-29 at 18 34 54](https://user-images.githubusercontent.com/39055313/135320164-bf2d2082-0101-4465-a518-c58d24ec7658.png)
+![Screenshot 2021-09-29 at 18 37 39](https://user-images.githubusercontent.com/39055313/135320363-7f8e4756-33fc-43f8-948e-c85c1675bd56.png)
+
 7. O teu PR será revisto por um dos mentores, e contará como uma contribuição para o Hacktoberfest se:
     - for "merged"; ou
     - tiver tag "hacktoberfest-accepted"

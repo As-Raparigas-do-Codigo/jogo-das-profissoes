@@ -12,22 +12,25 @@
 
 # Como Contribuir
 
-1. Faz comentário no issue que queres resolver; um dos mentores fará assign desse issue ao utilizador com o primeiro comentário;
+1. Faz comentário no issue que queres resolver
+    - Nota que só contam issues com a label "Hacktoberfest"
     - Nesse comentário dá uma pequena previsão de quando vais conseguir começar a resolver o problema, e se precisas de ajuda, para que possamos garantir que os issues não são abandonados;
     - Garante que não és atribuída a mais do que um issue ao mesmo tempo;
-2. Faz fork do projecto - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
-3. Cria um novo branch no projecto que bifurcaste - vê [aqui](https://docs.github.com/pt/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) como;
+2. Um dos mentores fará assign desse issue ao utilizador com o primeiro comentário;
+3. Faz fork do projecto - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
+4. Cria um novo branch no projecto que bifurcaste - vê [aqui](https://docs.github.com/pt/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) como;
     - Garante que lhe dás um nome descritivo, ex.: "adicionar-botao-home"
-4. Tenta fazer commits com regularidade
+5. Tenta fazer commits com regularidade
     - Tenta escrever mensagens descritivas, ex.: "adiciona botão azul à página inicial"
-5. Quando terminares o teu trabalho faz um Pull Request (PR) para o repositório original - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
-6. Quando criares o novo PR:
+6. Quando terminares o teu trabalho faz um Pull Request (PR) para o repositório original - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
+7. Quando criares o novo PR:
     - podes ver as alterações no ambiente de preview gerado pelo Netlify -> clicka no link e vê como é que o site vai ficar com a tua alteração
 
-![Screenshot 2021-09-29 at 18 34 54](https://user-images.githubusercontent.com/39055313/135320164-bf2d2082-0101-4465-a518-c58d24ec7658.png)
-![Screenshot 2021-09-29 at 18 37 39](https://user-images.githubusercontent.com/39055313/135320363-7f8e4756-33fc-43f8-948e-c85c1675bd56.png)
+    ![Screenshot 2021-09-29 at 18 34 54](https://user-images.githubusercontent.com/39055313/135320791-04f43bfd-aebe-4d34-acbd-20200798120e.png)
 
-7. O teu PR será revisto por um dos mentores, e contará como uma contribuição para o Hacktoberfest se:
+    ![Screenshot 2021-09-29 at 18 37 39](https://user-images.githubusercontent.com/39055313/135320592-d02e35f1-f02d-4a68-92fa-9833e0193526.png)
+
+8. O teu PR será revisto por um dos mentores, e contará como uma contribuição para o Hacktoberfest se:
     - for "merged"; ou
     - tiver tag "hacktoberfest-accepted"
 

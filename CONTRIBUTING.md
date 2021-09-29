@@ -12,22 +12,21 @@
 
 # Como Contribuir
 
-1. Vai até à [tab de "Issues"](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/issues) e escolhe um issue que tenha a label "Hacktoberfest"
+1. Vai até à [tab de "Issues"](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/issues) e escolhe um issue que tenha a label `Hacktoberfest`:
 
 ![Screenshot 2021-09-29 at 18 41 33](https://user-images.githubusercontent.com/39055313/135321000-f6fc1614-8995-4af9-bdc8-efe39670e7df.png)
 
-
-2. Faz um comentário no issue que quiseres resolver:
-    - Nesse comentário dá uma pequena previsão de quando vais conseguir começar a resolver o problema, e se precisas de ajuda, para que possamos garantir que os issues não são abandonados;
+2. Faz um comentário no issue que queres resolver:
+    - Nesse comentário dá uma pequena previsão de quando vais conseguir começar a resolver o problema, e indica se precisas de ajuda, para que possamos garantir que os issues não são abandonados;
     - Garante que não és atribuída a mais do que um issue ao mesmo tempo;
-3. Um dos mentores fará assign desse issue ao utilizador com o primeiro comentário;
-4. Faz fork do projecto - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
-5. Cria um novo branch no projecto que bifurcaste - vê [aqui](https://docs.github.com/pt/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) como;
+3. Um dos mentores **atribuirá** esse issue ao utilizador com o primeiro comentário;
+4. Quando o issue te for atribuído, faz **fork** do projecto - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
+5. Cria um **novo branch** no projecto que bifurcaste - vê [aqui](https://docs.github.com/pt/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) como;
     - Garante que lhe dás um nome descritivo, ex.: "adicionar-botao-home"
-6. Tenta fazer commits com regularidade e escreve mensagens descritivas, ex.: "adiciona botão azul à página inicial"
-7. Quando terminares o teu trabalho faz um Pull Request (PR) para o repositório original - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
+6. Tenta fazer **commits** com regularidade e escreve mensagens descritivas, ex.: "adiciona botão azul à página inicial";
+7. Quando terminares o teu trabalho faz um Pull Request (PR) para o branch `main` do repositório original - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
 8. Quando criares o novo PR:
-    - podes ver as alterações no ambiente de preview gerado pelo Netlify -> clicka no link e vê como é que o site vai ficar com a tua alteração
+    - podes ver as tuas alterações no ambiente de "preview" gerado pelo Netlify -> clicka no link e vê como é que o site vai ficar com a tua alteração
 
     ![Screenshot 2021-09-29 at 18 34 54](https://user-images.githubusercontent.com/39055313/135320791-04f43bfd-aebe-4d34-acbd-20200798120e.png)
 
@@ -37,15 +36,15 @@
     - for "merged"; ou
     - tiver tag "hacktoberfest-accepted"
 
-**Importante**
-
-Lembramos que não precisas apenas de resolver issues já identificados, podes também sugerir novas funcionalidades, reportar bugs, e dizer-nos caso tenhas ideias para o projecto, através da criação de um novo [Issue](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/issues).
-
 **Nota**
 
 Por vezes podemos não fazer "merge" de um PR porque não se enquadra no "roadmap" que temos para o projeto mas ainda assim queremos premiar o trabalho feito. 
 
 Podes ler mais sobre a participação no Hacktoberfest [aqui](https://hacktoberfest.digitalocean.com/resources/participation).
+
+**Importante**
+
+Lembramos que não precisas apenas de resolver issues já identificados, podes também sugerir novas funcionalidades, reportar bugs, e dizer-nos caso tenhas ideias para o projecto, através da criação de um novo [Issue](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/issues).
 
 ### Intruções para correr o projeto
 

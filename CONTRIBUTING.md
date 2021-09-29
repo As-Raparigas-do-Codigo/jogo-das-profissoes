@@ -16,7 +16,7 @@
 
     ![Screenshot 2021-09-29 at 19 18 00](https://user-images.githubusercontent.com/39055313/135326142-be3b2240-e019-4f72-a01d-2524e95f1bf0.png)
     * Se estás indecisa, começa com os Issues com a label `bom para iniciantes`, que são acessíveis a pessoas com todo o tipo de experiência.
-2. **Deixa um comentário** no issue que queres resolver
+2. **Deixa um comentário** no issue que queres resolver:
     - Tenta deixar uma pequena previsão de quando vais conseguir começar a resolver o problema, e indica se precisas de ajuda, para que possamos garantir que os issues não são abandonados;
     - Garante que não és atribuída a mais do que um issue ao mesmo tempo;
 3. Um dos mentores **atribuirá** esse issue ao utilizador com o primeiro comentário;
@@ -25,8 +25,7 @@
     - Garante que lhe dás um nome descritivo, ex.: "adicionar-botao-home"
 6. Tenta fazer **commits** com regularidade e escreve mensagens descritivas, ex.: "adiciona botão azul à página inicial";
 7. Quando terminares o teu trabalho faz um Pull Request (PR) para o branch `main` do repositório original - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
-8. Quando criares o novo PR:
-    - podes ver as tuas alterações no ambiente de "preview" gerado pelo Netlify -> clicka no link e vê como é que o site vai ficar com a tua alteração
+8. Quando criares o novo PR podes ver as tuas alterações no ambiente de "preview" gerado pelo Netlify -> clicka no link e vê como é que o site vai ficar com a tua alteração
 
     ![Screenshot 2021-09-29 at 18 34 54](https://user-images.githubusercontent.com/39055313/135320791-04f43bfd-aebe-4d34-acbd-20200798120e.png)
 

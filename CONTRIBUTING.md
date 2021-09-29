@@ -7,6 +7,8 @@
   Thank you!
 </details>
 
+# Como Contribuir
+
 1. Faz comentário no issue que queres resolver; um dos mentores fará assign desse issue ao utilizador com o primeiro comentário;
     - Nesse comentário dá uma pequena previsão de quando vais conseguir começar a resolver o problema, e se precisas de ajuda, para que possamos garantir que os issues não são abandonados;
     - Garante que não és atribuída a mais do que um issue ao mesmo tempo;

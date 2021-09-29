@@ -8,9 +8,9 @@ Esta iniciativa reuniu várias entidades que, conjuntamente e voluntariamente pr
 
 -----
 
-### Como contribuir
+### Como contribuir / Contribution Guidelines
 
-Lê o ficheiro [CONTRIBUTING.md](CONTRIBUTING.md).
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Licença
 

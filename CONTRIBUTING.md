@@ -14,8 +14,8 @@
 
 1. Vai até à [tab de "Issues"](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/issues) e escolhe um issue que tenha a label `Hacktoberfest`:
 
-![Screenshot 2021-09-29 at 18 41 33](https://user-images.githubusercontent.com/39055313/135321000-f6fc1614-8995-4af9-bdc8-efe39670e7df.png)
-
+    ![Screenshot 2021-09-29 at 19 18 00](https://user-images.githubusercontent.com/39055313/135326142-be3b2240-e019-4f72-a01d-2524e95f1bf0.png)
+    * Se estás indecisa, começa com os Issues com a label `bom para iniciantes`, que são acessíveis a pessoas com todo o tipo de experiência.
 2. Faz um comentário no issue que queres resolver:
     - Nesse comentário dá uma pequena previsão de quando vais conseguir começar a resolver o problema, e indica se precisas de ajuda, para que possamos garantir que os issues não são abandonados;
     - Garante que não és atribuída a mais do que um issue ao mesmo tempo;

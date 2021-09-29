@@ -46,7 +46,9 @@ Lembramos que não precisas apenas de resolver issues já identificados, podes t
 
 Finalmente, caso tenhas qualquer dúvida durante a tua contribuição, deixa a tua dúvida na Issue ou no Discord, estamos aqui para te apoiar!
 
-### Intruções para correr o projeto
+--------
+
+# Intruções para correr o projeto
 
 1. Clona o projecto para o teu computador usando o Github Desktop ou a linha de comandos/terminal:
 

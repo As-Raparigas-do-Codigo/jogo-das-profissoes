@@ -36,15 +36,15 @@
     - for "merged"; ou
     - tiver tag "hacktoberfest-accepted"
 
-**Nota**
-
-Por vezes podemos não fazer "merge" de um PR porque não se enquadra no "roadmap" que temos para o projeto mas ainda assim queremos premiar o trabalho feito. 
+Nota: por vezes podemos não fazer "merge" de um PR porque não se enquadra no "roadmap" que temos para o projeto mas ainda assim queremos premiar o trabalho feito e, como tal, atribuímos-lhe a tag `hacktoberfest-accepted`, que também conta para o Hacktoberfest.
 
 Podes ler mais sobre a participação no Hacktoberfest [aqui](https://hacktoberfest.digitalocean.com/resources/participation).
 
 **Importante**
 
 Lembramos que não precisas apenas de resolver issues já identificados, podes também sugerir novas funcionalidades, reportar bugs, e dizer-nos caso tenhas ideias para o projecto, através da criação de um novo [Issue](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/issues).
+
+Finalmente, caso tenhas qualquer dúvida durante a tua contribuição, deixa a tua dúvida na Issue ou no Discord, estamos aqui para te apoiar!
 
 ### Intruções para correr o projeto
 
@@ -54,6 +54,5 @@ Lembramos que não precisas apenas de resolver issues já identificados, podes t
   ~ git clone https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes.git
   ```
 
-2. Abre o projeto no teu IDE favorito;
+2. Abre o projeto no teu editor de código (IDE) favorito;
 3. Abre o `index.html` no teu browser para ver o site;
-

@@ -12,7 +12,7 @@
 
 # Como Contribuir
 
-1. Vai até à tad de Issue e escolhe um issue que tenha a label "Hacktoberfest"
+1. Vai até à [tab de "Issues"](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/issues) e escolhe um issue que tenha a label "Hacktoberfest"
 
 ![Screenshot 2021-09-29 at 18 41 33](https://user-images.githubusercontent.com/39055313/135321000-f6fc1614-8995-4af9-bdc8-efe39670e7df.png)
 

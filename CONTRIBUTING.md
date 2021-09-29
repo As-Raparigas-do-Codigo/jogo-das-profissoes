@@ -1,8 +1,11 @@
 <details>
   <summary>Note for non-Portuguese Speaking Contributors</summary>
+  
   This project was made open source in order to encourage contributions from Portuguese students enrolled in the "As Raparigas do Código" project and, as such, will be mostly written in Portuguese. 
+  
+  https://raparigasdocodigo.pt/
 
-  However, if you'd like to contribute, we will accept PRs not written in portugues, with an English code source. 
+  However, if you'd like to contribute, we will accept PRs in English. 
   
   Thank you!
 </details>

@@ -16,8 +16,7 @@
 
     ![Screenshot 2021-09-29 at 19 18 00](https://user-images.githubusercontent.com/39055313/135326142-be3b2240-e019-4f72-a01d-2524e95f1bf0.png)
     * Se estás indecisa, começa com os Issues com a label `bom para iniciantes`, que são acessíveis a pessoas com todo o tipo de experiência.
-2. Faz um comentário no issue que queres resolver:
-    - Nesse comentário dá uma pequena previsão de quando vais conseguir começar a resolver o problema, e indica se precisas de ajuda, para que possamos garantir que os issues não são abandonados;
+2. **Deixa um comentário** no issue que queres resolver - tenta deixar uma pequena previsão de quando vais conseguir começar a resolver o problema, e indica se precisas de ajuda, para que possamos garantir que os issues não são abandonados;
     - Garante que não és atribuída a mais do que um issue ao mesmo tempo;
 3. Um dos mentores **atribuirá** esse issue ao utilizador com o primeiro comentário;
 4. Quando o issue te for atribuído, faz **fork** do projecto - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;

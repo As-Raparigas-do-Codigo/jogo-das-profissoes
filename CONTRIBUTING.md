@@ -24,8 +24,7 @@
 4. Faz fork do projecto - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
 5. Cria um novo branch no projecto que bifurcaste - vê [aqui](https://docs.github.com/pt/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) como;
     - Garante que lhe dás um nome descritivo, ex.: "adicionar-botao-home"
-6. Tenta fazer commits com regularidade
-    - Tenta escrever mensagens descritivas, ex.: "adiciona botão azul à página inicial"
+6. Tenta fazer commits com regularidade e escreve mensagens descritivas, ex.: "adiciona botão azul à página inicial"
 7. Quando terminares o teu trabalho faz um Pull Request (PR) para o repositório original - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;
 8. Quando criares o novo PR:
     - podes ver as alterações no ambiente de preview gerado pelo Netlify -> clicka no link e vê como é que o site vai ficar com a tua alteração

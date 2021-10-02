@@ -175,7 +175,7 @@
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  const swiper = new Swiper('.portfolio-details-slider', {
     speed: 400,
     autoplay: {
       delay: 5000,

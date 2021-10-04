@@ -29,7 +29,7 @@ jobs:
       - name: Altera as permissões do ficheiro de creds
         run: chmod 600 ~/.davfs2/secrets
       - name: Monta o disco
-        run: mkdir -p /mnt/jogodasprofissoes && mount -t davfs https://jogodasprofissoes.pt:2078 /mnt/jogodasprofissoes
+        run: mkdir -p ~/jdp-disco && mount -t davfs https://jogodasprofissoes.pt:2078 /jdp-disco
 
       #- name: Copia todos os ficheiros
       #  run: cp -vr ./jogodasprofissoes/ /mnt/jogodasprofissoes/

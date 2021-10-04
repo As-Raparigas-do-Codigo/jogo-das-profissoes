@@ -10,9 +10,8 @@ jobs:
     steps:
       - name: Saca imagem
         run: docker pull qautomatron/docker-webdav-disk:latest
-      - name: Lista ficheiros da pasta atual
-        run: ls
-        shell: bash 
+      - name: PWD
+        run: pwd
       - name: Arrancar container
         run: docker run -d -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=https://jogodasprofissoes.pt:2078 --name jdp-webdav --privileged --cap-add=ALL -v $(pwd)/*:/mnt/jogo-das-profissoes/ qautomatron/docker-webdav-disk
       - name: Copia os ficheiros

@@ -10,7 +10,7 @@ jobs:
     container: qautomatron/docker-webdav-disk:latest
     steps:
       - uses: actions/checkout@v2
-        run: docker run -d \
+      - run: docker run -d \
           -e WEBDAV_USER=${{ secrets.JDP_USER }} \
           -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} \
           -e WEBDAV_URL=https://jogodasprofissoes.pt:2078 \

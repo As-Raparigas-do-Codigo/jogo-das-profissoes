@@ -20,5 +20,7 @@ jobs:
         run: echo 'open https://jogodasprofissoes.pt:2078' > ~/.cadaverrc
       - name: Change permission to .cadaverrc
         run: chmod 600 ~/.cadaverrc
+      - name: Start cadaver
+        run: cadaver
       - name: List files
         run: ls

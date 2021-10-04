@@ -8,19 +8,23 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Updates packages
+      - name: Atualiza pacotes
         run: sudo apt-get update
-      - name: Install cadaver
+      - name: Instala o pacote 'cadaver'
         run: sudo dpkg --configure -a && DEBIAN_FRONTEND=noninteractive sudo apt-get -yq install cadaver
-      - name: Write creds to .netrc
+      - name: Instala o pacote 'git'
+        run: sudo apt-get -yq install git
+      - name: Clona o project
+        run: git clone https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes.git
+      - name: Escreve as credenciais do WebDav no ficheiro .netrc
         run: echo 'default' > ~/.netrc && echo 'login ${{ secrets.JDP_USER }}' >> ~/.netrc && echo 'password ${{ secrets.JDP_PWD }}' >> ~/.netrc
-      - name: Change permission to .netrc
+      - name: Altera as permissões do ficheiro .netrc
         run: chmod 600 ~/.netrc
-      - name: Write cadaver settings
+      - name: Escreve os settings do cadaver
         run: echo 'open https://jogodasprofissoes.pt:2078' > ~/.cadaverrc
-      - name: Change permission to .cadaverrc
+      - name: Altera as permissões do ficheiro .cadaverrc
         run: chmod 600 ~/.cadaverrc
-      - name: Start cadaver
+      - name: Arranca o cadaver
         run: cadaver
-      - name: List files
+      - name: Lista os ficheiros
         run: ls

@@ -29,7 +29,7 @@ jobs:
       - name: Cria a pasta para conter o disco
         run: mkdir -p ~/jogodasprofissoes
       - name: Monta o disco
-        run: mount -t davfs https://jogodasprofissoes.pt:2078 ~/jogodasprofissoes
+        run: sudo mount -t davfs https://jogodasprofissoes.pt:2078 ~/jogodasprofissoes
 
       #- name: Copia todos os ficheiros
       #  run: cp -vr ./jogodasprofissoes/ /mnt/jogodasprofissoes/

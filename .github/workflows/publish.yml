@@ -9,33 +9,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      # Instalação de pacotes
-      - name: Atualiza pacotes
-        run: sudo apt-get update
-      - name: Instala o pacote 'davfs2'
-        run: sudo apt-get -yq install davfs2
-      - name: Instala o pacote 'git'
-        run: sudo apt-get -yq install git
+      # Docker
+      - name: Vai buscar imagem docker
+        run: docker image pull qautomatron/docker-webdav-disk:latest
+      - name: Corre docker
+        run: docker run -d \
+          -e WEBDAV_USER=${{ secrets.JDP_USER }} \
+          -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} \
+          -e WEBDAV_URL=https://jogodasprofissoes.pt:2078 \
+          --name jdp-webdav \
+          --privileged \
+          --cap-add=ALL \
+          -v /dev:/dev  \
+          -v /lib/modules:/lib/modules \
+          qautomatron/docker-webdav-disk
+      - name: Lista conteúdos da pasta
+        run: ls -la /mnt/cloud
 
       # Clone do projecto
       - name: Clona o project
         run: git clone https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes.git
-
-      # Passa a root
-      - name: Upgrade
-        run: su root
-      - name: whoami
-        run: whoami
-
-      # Monta o diretório
-      - name: Escreve as credenciais do WebDav
-        run: mkdir /etc/.davfs2 && echo 'https://jogodasprofissoes.pt:2078 ${{ secrets.JDP_USER }} ${{ secrets.JDP_PWD }}' > /etc/.davfs2/secrets
-      - name: Altera as permissões do ficheiro de creds
-        run: chmod 600 /etc/.davfs2/secrets && chown root:root /etc/.davfs2/secrets
-      - name: Cria a pasta para conter o disco
-        run: mkdir -p /media/jogodasprofissoes
-      - name: Monta o disco
-        run: mount -t davfs https://jogodasprofissoes.pt:2078 /media/jogodasprofissoes
-
-      #- name: Copia todos os ficheiros
-      #  run: cp -vr ./jogodasprofissoes/ /mnt/jogodasprofissoes/

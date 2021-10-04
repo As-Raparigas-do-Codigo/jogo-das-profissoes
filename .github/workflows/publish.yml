@@ -8,10 +8,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-
-      # Docker
       - name: Vai buscar imagem docker
         run: docker image pull qautomatron/docker-webdav-disk:latest
+      - name: Valida imagens
+        run: docker images
       - name: Corre docker
         run: docker run -d \
           -e WEBDAV_USER=${{ secrets.JDP_USER }} \
@@ -27,7 +27,5 @@ jobs:
         run: docker exec -it jdp-webdav /bin/bash
       - name: Lista conteúdos da pasta
         run: ls -la /mnt/cloud
-
-      # Clone do projecto
       - name: Clona o project
         run: git clone https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes.git

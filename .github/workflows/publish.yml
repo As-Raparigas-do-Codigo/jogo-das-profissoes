@@ -1,4 +1,4 @@
-name: Deploy
+name: Publish
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
       - name: Updates packages
         run: sudo apt-get update
       - name: Install cadaver
-        run: dpkg --configure -a && DEBIAN_FRONTEND=noninteractive sudo apt-get -yq install cadaver
+        run: sudo dpkg --configure -a && DEBIAN_FRONTEND=noninteractive sudo apt-get -yq install cadaver
       - name: Write creds to .netrc
         run: echo 'default' > ~/.netrc && echo 'login ${{ secrets.JDP_USER }}' >> ~/.netrc && echo 'password ${{ secrets.JDP_PWD }}' >> ~/.netrc
       - name: Change permission to .netrc

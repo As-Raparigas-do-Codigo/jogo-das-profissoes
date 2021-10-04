@@ -23,6 +23,8 @@ jobs:
           -v /dev:/dev  \
           -v /lib/modules:/lib/modules \
           qautomatron/docker-webdav-disk
+      - name: Arranca shell
+        run: docker exec -it jdp-webdav /bin/bash
       - name: Lista conteúdos da pasta
         run: ls -la /mnt/cloud
 

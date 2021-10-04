@@ -17,12 +17,12 @@ jobs:
           -e WEBDAV_USER=${{ secrets.JDP_USER }} \
           -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} \
           -e WEBDAV_URL=https://jogodasprofissoes.pt:2078 \
+          --name jdp-webdav \
+          --privileged \
+          --cap-add=ALL \
+          -v /dev:/dev  \
+          -v /lib/modules:/lib/modules \          
           qautomatron/docker-webdav-disk
-          #--name jdp-webdav \
-          #--privileged \
-          #--cap-add=ALL \
-          #-v /dev:/dev  \
-          #-v /lib/modules:/lib/modules \          
       - name: Arranca shell
         run: docker exec -it jdp-webdav /bin/bash
       - name: Lista conteúdos da pasta

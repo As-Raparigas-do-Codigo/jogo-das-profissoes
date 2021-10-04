@@ -7,8 +7,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    container: qautomatron/docker-webdav-disk:latest
     steps:
+      - name: Saca imagem
+        run: docker pull qautomatron/docker-webdav-disk:latest
       - name: Corre docker
         run: docker run -d \
           -e WEBDAV_USER=${{ secrets.JDP_USER }} \

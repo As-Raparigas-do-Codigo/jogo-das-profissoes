@@ -7,9 +7,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    container: qautomatron/docker-webdav-disk:latest
     steps:
-      - name: Vai buscar imagem docker
-        run: docker image pull qautomatron/docker-webdav-disk:latest
+      - uses: actions/checkout@v2
+      - run: |
+          echo "Runs inside a container"
       - name: Corre docker
         run: docker run -d \
           -e WEBDAV_USER=${{ secrets.JDP_USER }} \

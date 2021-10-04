@@ -20,6 +20,8 @@ jobs:
         run: sudo apt-get -yq install git
 
       # Clone do projecto
+      - name: QuemSour
+        run: whoami
       - name: Clona o project
         run: git clone https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes.git
 
@@ -28,8 +30,10 @@ jobs:
         run: mkdir ~/.davfs2 && echo 'https://jogodasprofissoes.pt:2078 ${{ secrets.JDP_USER }} ${{ secrets.JDP_PWD }}' > ~/.davfs2/secrets
       - name: Altera as permissões do ficheiro de creds
         run: chmod 600 ~/.davfs2/secrets
+      - name: Cria a pasta para conter o disco
+        run: sudo mkdir -p /media/jogodasprofissoes
       - name: Monta o disco
-        run: mkdir -p ~/jdp-disco && sudo mount -t davfs https://jogodasprofissoes.pt:2078 ~/jdp-disco
+        run: sudo mount -t davfs https://jogodasprofissoes.pt:2078 /media/jogodasprofissoes
 
       #- name: Copia todos os ficheiros
       #  run: cp -vr ./jogodasprofissoes/ /mnt/jogodasprofissoes/

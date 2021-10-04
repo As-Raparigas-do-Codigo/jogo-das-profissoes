@@ -25,7 +25,7 @@ jobs:
 
       # Monta o diretório
       - name: Escreve as credenciais do WebDav
-        run: sudo mkdir /etc/.davfs2 && sudo echo 'https://jogodasprofissoes.pt:2078 ${{ secrets.JDP_USER }} ${{ secrets.JDP_PWD }}' > /etc/.davfs2/secrets
+        run: mkdir /etc/.davfs2 && echo 'https://jogodasprofissoes.pt:2078 ${{ secrets.JDP_USER }} ${{ secrets.JDP_PWD }}' > /etc/.davfs2/secrets
       - name: Altera as permissões do ficheiro de creds
         run: sudo chmod 600 /etc/.davfs2/secrets
       - name: Monta o disco

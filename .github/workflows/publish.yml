@@ -12,7 +12,5 @@ jobs:
         run: docker pull qautomatron/docker-webdav-disk:latest
       - name: Corre docker
         run: docker run -d -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=https://jogodasprofissoes.pt:2078 --name jdp-webdav --privileged --cap-add=ALL -v /dev:/dev -v /lib/modules:/lib/modules qautomatron/docker-webdav-disk
-      - name: Lista ficheiros no disco
-        run: docker exec jdp-webdav ls /mnt/cloud
-      - name: Clona o project
-        run: git clone https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes.git
+      - name: Clona o project para pasta de mount
+        run: docker exec jdp-webdav git clone https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes.git /mnt/cloud

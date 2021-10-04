@@ -21,15 +21,21 @@ jobs:
       - name: Clona o project
         run: git clone https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes.git
 
+      # Passa a root
+      - name: Upgrade
+        run: su root
+      - name: whoami
+        run: whoami
+
       # Monta o diretório
       - name: Escreve as credenciais do WebDav
-        run: mkdir ~/.davfs2 && echo 'https://jogodasprofissoes.pt:2078 ${{ secrets.JDP_USER }} ${{ secrets.JDP_PWD }}' > ~/.davfs2/secrets
+        run: mkdir /etc/.davfs2 && echo 'https://jogodasprofissoes.pt:2078 ${{ secrets.JDP_USER }} ${{ secrets.JDP_PWD }}' > /etc/.davfs2/secrets
       - name: Altera as permissões do ficheiro de creds
-        run: chmod 600 ~/.davfs2/secrets
+        run: chmod 600 /etc/.davfs2/secrets && chown root:root /etc/.davfs2/secrets
       - name: Cria a pasta para conter o disco
-        run: mkdir -p ~/jogodasprofissoes
+        run: mkdir -p /media/jogodasprofissoes
       - name: Monta o disco
-        run: sudo mount -t davfs https://jogodasprofissoes.pt:2078 ~/jogodasprofissoes
+        run: mount -t davfs https://jogodasprofissoes.pt:2078 /media/jogodasprofissoes
 
       #- name: Copia todos os ficheiros
       #  run: cp -vr ./jogodasprofissoes/ /mnt/jogodasprofissoes/

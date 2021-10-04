@@ -12,6 +12,8 @@ jobs:
         run: docker pull qautomatron/docker-webdav-disk:latest
       - name: Clona o projecto
         run: git clone https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes.git
+      - name: pwd
+        run: pwd
       - name: Arrancar container
         run: docker run -d -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=https://jogodasprofissoes.pt:2078 --name jdp-webdav --privileged --cap-add=ALL -v $(pwd)/jogo-das-profissoes:/mnt/jogo-das-profissoes qautomatron/docker-webdav-disk
       - name: Copia os ficheiros

@@ -10,9 +10,6 @@ jobs:
     container: qautomatron/docker-webdav-disk:latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          echo "Runs inside a container"
-      - name: Corre docker
         run: docker run -d \
           -e WEBDAV_USER=${{ secrets.JDP_USER }} \
           -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} \

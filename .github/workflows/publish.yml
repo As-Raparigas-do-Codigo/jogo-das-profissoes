@@ -8,23 +8,28 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+
+      # Instalação de pacotes
       - name: Atualiza pacotes
         run: sudo apt-get update
-      - name: Instala o pacote 'cadaver'
-        run: sudo dpkg --configure -a && DEBIAN_FRONTEND=noninteractive sudo apt-get -yq install cadaver
+      - name: Instala o pacote 'davfs2'
+        run: sudo apt-get -yq install davfs2
+      - name: Instala o pacote 'kmod'
+        run: sudo apt-get -yq install kmod
       - name: Instala o pacote 'git'
         run: sudo apt-get -yq install git
+
+      # Clone do projecto
       - name: Clona o project
         run: git clone https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes.git
-      - name: Escreve as credenciais do WebDav no ficheiro .netrc
-        run: echo 'default' > ~/.netrc && echo 'login ${{ secrets.JDP_USER }}' >> ~/.netrc && echo 'password ${{ secrets.JDP_PWD }}' >> ~/.netrc
-      - name: Altera as permissões do ficheiro .netrc
-        run: chmod 600 ~/.netrc
-      - name: Escreve os settings do cadaver
-        run: echo 'open https://jogodasprofissoes.pt:2078' > ~/.cadaverrc
-      - name: Altera as permissões do ficheiro .cadaverrc
-        run: chmod 600 ~/.cadaverrc
-      - name: Arranca o cadaver
-        run: cadaver
-      - name: Lista os ficheiros
-        run: ls
+
+      # Monta o diretório
+      - name: Escreve as credenciais do WebDav
+        run: sudo mkdir /etc/.davfs2 && sudo echo 'https://jogodasprofissoes.pt:2078 ${{ secrets.JDP_USER }} ${{ secrets.JDP_PWD }}' > /etc/.davfs2/secrets
+      - name: Altera as permissões do ficheiro de creds
+        run: sudo chmod 600 /etc/.davfs2/secrets
+      - name: Monta o disco
+        run: mkdir -p /mnt/jogodasprofissoes && mount -t davfs https://jogodasprofissoes.pt:2078 /mnt/jogodasprofissoes
+
+      #- name: Copia todos os ficheiros
+      #  run: cp -vr ./jogodasprofissoes/ /mnt/jogodasprofissoes/

@@ -10,18 +10,17 @@ jobs:
     steps:
       - name: Vai buscar imagem docker
         run: docker image pull qautomatron/docker-webdav-disk:latest
-      - name: Valida imagens
-        run: docker images
       - name: Corre docker
-        run: docker run qautomatron/docker-webdav-disk -d
-          #-e WEBDAV_USER=${{ secrets.JDP_USER }} \
-          #-e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} \
-          #-e WEBDAV_URL=https://jogodasprofissoes.pt:2078 \
+        run: docker run -d \
+          -e WEBDAV_USER=${{ secrets.JDP_USER }} \
+          -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} \
+          -e WEBDAV_URL=https://jogodasprofissoes.pt:2078 \
+          qautomatron/docker-webdav-disk
           #--name jdp-webdav \
           #--privileged \
           #--cap-add=ALL \
           #-v /dev:/dev  \
-          #-v /lib/modules:/lib/modules \
+          #-v /lib/modules:/lib/modules \          
       - name: Arranca shell
         run: docker exec -it jdp-webdav /bin/bash
       - name: Lista conteúdos da pasta

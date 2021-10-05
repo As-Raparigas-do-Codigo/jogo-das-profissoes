@@ -16,5 +16,7 @@ jobs:
         run: docker exec jdp-webdav rm -rf /mnt/cloud/
       - name: Copia os ficheiros HTML do repositório para o disco
         run: docker exec jdp-webdav cp /mnt/jogo-das-profissoes/*.html /mnt/cloud/
+      - name: Copia favicon do repositório para o disco
+        run: docker exec jdp-webdav cp /mnt/jogo-das-profissoes/favicon.ico /mnt/cloud/
       - name: Copia pasta de assets para disco
         run: docker exec jdp-webdav cp -r /mnt/jogo-das-profissoes/assets /mnt/cloud/

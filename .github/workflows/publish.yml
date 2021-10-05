@@ -18,6 +18,8 @@ jobs:
         run: docker run -d -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=https://jogodasprofissoes.pt:2078 --name jdp-webdav --privileged --cap-add=ALL -v ${{ env.GIT_REPO_PATH }}:${{ env.JDP_MNT }} qautomatron/docker-webdav-disk
       #- name: Remove todos os ficheiros no disco
       #  run: docker exec jdp-webdav rm -rf ${{ env.JDP_WEBBDAV_DISK_MNT }}/*
+      - name: Sleep 3
+        run: sleep 3
       - name: Copia os ficheiros HTML do repositorio para o disco
         run: docker exec jdp-webdav sudo cp ${{ env.JDP_MNT }}/*.html ${{ env.JDP_WEBBDAV_DISK_MNT }}/
       - name: Copia favicon do repositorio para o disco

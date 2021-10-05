@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GIT_REPO_PATH: /home/runner/work/jogo-das-profissoes/jogo-das-profissoes
-      JDP_MNT: /mnt/jogo-das-profissoes
+      JDP_MNT: ~/jogo-das-profissoes
       JDP_WEBBDAV_DISK_MNT: /mnt/cloud
     steps:
       - name: Faz checkout do codigo do repositorio

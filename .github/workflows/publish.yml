@@ -6,11 +6,15 @@ jobs:
   run-lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Faz checkout do código do repositório
         uses: actions/checkout@v2
-      - name: Saca imagem
+      - name: Saca imagem de Docker
         run: docker pull qautomatron/docker-webdav-disk:latest
-      - name: Arrancar container
+      - name: Arrancar container e monta disco WebDav
         run: docker run -d -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=https://jogodasprofissoes.pt:2078 --name jdp-webdav --privileged --cap-add=ALL -v /home/runner/work/jogo-das-profissoes/jogo-das-profissoes:/mnt/jogo-das-profissoes qautomatron/docker-webdav-disk
-      - name: Copia os ficheiros
-        run: docker exec jdp-webdav cp -r /mnt/jogo-das-profissoes/* /mnt/cloud/
+      - name: Remove todos os ficheiros no disco
+        run: docker exec jdp-webdav rm -rf /mnt/cloud/
+      - name: Copia os ficheiros HTML do repositório para o disco
+        run: docker exec jdp-webdav cp /mnt/jogo-das-profissoes/*.html /mnt/cloud/
+      - name: Copia pasta de assets para disco
+        run: docker exec jdp-webdav cp -r /mnt/jogo-das-profissoes/assets /mnt/cloud/

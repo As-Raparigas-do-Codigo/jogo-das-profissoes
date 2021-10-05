@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       JDP_WEBDAV_URL: https://jogodasprofissoes.pt:2078
-      CONTAINER_NAME: jdp-webdav
       GIT_REPO_PATH: /home/runner/work/jogo-das-profissoes/jogo-das-profissoes/
       JDP_MNT: /mnt/jogodasprofissoes
       JDP_WEBBDAV_DISK_MNT: /mnt/cloud/
@@ -16,9 +15,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Saca imagem de Docker
         run: docker pull qautomatron/docker-webdav-disk:latest
-      - name: Arranca container e monta disco WebDav
-        run: docker run -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=${{ env.JDP_WEBDAV_URL }} --privileged --cap-add=ALL -v ${{ env.GIT_REPO_PATH }}:${{ env.JDP_MNT }} --name ${{ env.CONTAINER_NAME }} -v ${{ env.GIT_REPO_PATH }}:${{ env.JDP_MNT }} qautomatron/docker-webdav-disk cp -R ${{ JDP_MNT }} /mnt/cloud /mnt/cloud
-      - name: Remove todos os ficheiros no disco
-        run: docker exec -d ${{ env.CONTAINER_NAME }} rm -rf ${{ env.JDP_WEBBDAV_DISK_MNT }}*
-      - name: Copia os ficheiros do repositorio para o disco
-        run: docker exec -d ${{ env.CONTAINER_NAME }} cp -r ${{ env.JDP_MNT }}/* ${{ env.JDP_WEBBDAV_DISK_MNT }}
+      - name: Arranca container, mosta o disco, copia os ficheiros
+        run: docker run -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=${{ env.JDP_WEBDAV_URL }} --privileged --cap-add=ALL -v ${{ env.GIT_REPO_PATH }}:${{ env.JDP_MNT }} -v ${{ env.GIT_REPO_PATH }}:${{ env.JDP_MNT }} qautomatron/docker-webdav-disk cp -R ${{ JDP_MNT }} /mnt/cloud /mnt/cloud

@@ -18,12 +18,10 @@ jobs:
         run: docker pull qautomatron/docker-webdav-disk:latest
       - name: Arranca container e monta disco WebDav
         run: docker run -d -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=${{ env.JDP_WEBDAV_URL }} -v ${{ env.GIT_REPO_PATH }}:${{ env.JDP_MNT }} --name ${{ env.CONTAINER_NAME }} --privileged --cap-add=ALL qautomatron/docker-webdav-disk
-      - name: PWD
-        run: docker exec ${{ env.CONTAINER_NAME }} pwd
       #- name: Remove todos os ficheiros no disco
       #  run: docker exec ${{ env.CONTAINER_NAME }} rm -rf ${{ env.JDP_WEBBDAV_DISK_MNT }}/*
-      #- name: Copia os ficheiros HTML do repositorio para o disco
-      #  run: docker exec ${{ env.CONTAINER_NAME }} cp ${{ env.JDP_MNT }}/*.html ${{ env.JDP_WEBBDAV_DISK_MNT }}/
+      - name: Copia os ficheiros HTML do repositorio para o disco
+        run: docker exec ${{ env.CONTAINER_NAME }} cp ${{ env.JDP_MNT }}/*.html ${{ env.JDP_WEBBDAV_DISK_MNT }}/
       #- name: Copia favicon do repositorio para o disco
       #  run: docker exec ${{ env.CONTAINER_NAME }} cp ${{ env.JDP_MNT }}/favicon.ico ${{ env.JDP_WEBBDAV_DISK_MNT }}/
       #- name: Copia pasta de assets para disco

@@ -1,7 +1,7 @@
 name: Publish
 on:
   push:
-    branches: [ deploy ]
+    branches: [ main ]
 jobs:
   run-lint:
     runs-on: ubuntu-latest

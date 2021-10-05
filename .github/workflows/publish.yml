@@ -21,4 +21,4 @@ jobs:
       - name: Remove todos os ficheiros no disco
         run: docker exec -d ${{ env.CONTAINER_NAME }} rm -rf ${{ env.JDP_WEBBDAV_DISK_MNT }}*
       - name: Copia os ficheiros do repositorio para o disco
-        run: docker exec -d ${{ env.CONTAINER_NAME }} cp -r ${{ env.JDP_MNT }}/* ${{ env.JDP_WEBBDAV_DISK_MNT }}
+        run: docker exec -d ${{ env.CONTAINER_NAME }} cp -R ${{ env.JDP_MNT }}/* ${{ env.JDP_WEBBDAV_DISK_MNT }}

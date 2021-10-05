@@ -1,0 +1,24 @@
+name: Publish
+on:
+  push:
+    branches: [main]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      JDP_WEBDAV_URL: https://jogodasprofissoes.pt:2078
+      CONTAINER_NAME: jdp-webdav
+      GIT_REPO_PATH: /home/runner/work/jogo-das-profissoes/jogo-das-profissoes
+      JDP_MNT: /mnt/jogodasprofissoes
+      JDP_WEBBDAV_DISK_MNT: /mnt/cloud/
+    steps:
+      - name: Faz checkout do codigo do repositorio
+        uses: actions/checkout@v2
+      - name: Saca imagem de Docker
+        run: docker pull qautomatron/docker-webdav-disk:latest
+      - name: Arranca container e monta disco WebDav
+        run: docker run -d -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=${{ env.JDP_WEBDAV_URL }} -v ${{ env.GIT_REPO_PATH }}:${{ env.JDP_MNT }} --name ${{ env.CONTAINER_NAME }} --privileged --cap-add=ALL qautomatron/docker-webdav-disk
+      - name: Remove todos os ficheiros no disco
+        run: docker exec -d ${{ env.CONTAINER_NAME }} rm -rf ${{ env.JDP_WEBBDAV_DISK_MNT }}*
+      - name: Copia os ficheiros HTML do repositorio para o disco
+        run: docker exec -d ${{ env.CONTAINER_NAME }} cp -r ${{ env.JDP_MNT }}/* ${{ env.JDP_WEBBDAV_DISK_MNT }}

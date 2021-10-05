@@ -12,8 +12,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Saca imagem
         run: docker pull qautomatron/docker-webdav-disk:latest
-      - name: Debug - Ls
-        run: whoami && ls -la && pwd
       - name: Arrancar container
         run: docker run -d -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=https://jogodasprofissoes.pt:2078 --name jdp-webdav --privileged --cap-add=ALL -v /home/runner/work/jogo-das-profissoes/jogo-das-profissoes:/mnt/jogo-das-profissoes qautomatron/docker-webdav-disk
       - name: Copia os ficheiros

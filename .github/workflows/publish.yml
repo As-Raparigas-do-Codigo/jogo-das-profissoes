@@ -16,4 +16,4 @@ jobs:
       - name: Saca imagem de Docker
         run: docker pull qautomatron/docker-webdav-disk:latest
       - name: Arranca container, mosta o disco, copia os ficheiros
-        run: docker run -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=${{ env.JDP_WEBDAV_URL }} --privileged --cap-add=ALL -v ${{ env.GIT_REPO_PATH }}:${{ env.JDP_MNT }} qautomatron/docker-webdav-disk cp -R ${{ JDP_MNT }} /mnt/cloud /mnt/cloud
+        run: docker run -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=${{ env.JDP_WEBDAV_URL }} --privileged --cap-add=ALL -v ${{ env.GIT_REPO_PATH }}:${{ env.JDP_MNT }} qautomatron/docker-webdav-disk cp -R ${{ env.JDP_MNT }} /mnt/cloud /mnt/cloud

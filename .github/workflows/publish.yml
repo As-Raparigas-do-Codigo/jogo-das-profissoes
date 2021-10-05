@@ -19,8 +19,8 @@ jobs:
       #- name: Remove todos os ficheiros no disco
       #  run: docker exec jdp-webdav rm -rf ${{ env.JDP_WEBBDAV_DISK_MNT }}/*
       - name: Copia os ficheiros HTML do repositorio para o disco
-        run: docker exec jdp-webdav cp ${{ env.JDP_MNT }}/*.html ${{ env.JDP_WEBBDAV_DISK_MNT }}/
+        run: docker exec jdp-webdav sudo cp ${{ env.JDP_MNT }}/*.html ${{ env.JDP_WEBBDAV_DISK_MNT }}/
       - name: Copia favicon do repositorio para o disco
-        run: docker exec jdp-webdav cp ${{ env.JDP_MNT }}/favicon.ico ${{ env.JDP_WEBBDAV_DISK_MNT }}/
+        run: docker exec jdp-webdav sudo cp ${{ env.JDP_MNT }}/favicon.ico ${{ env.JDP_WEBBDAV_DISK_MNT }}/
       - name: Copia pasta de assets para disco
-        run: docker exec jdp-webdav cp -r ${{ env.JDP_MNT }}/assets ${{ env.JDP_WEBBDAV_DISK_MNT }}/
+        run: docker exec jdp-webdav sudo cp -r ${{ env.JDP_MNT }}/assets ${{ env.JDP_WEBBDAV_DISK_MNT }}/

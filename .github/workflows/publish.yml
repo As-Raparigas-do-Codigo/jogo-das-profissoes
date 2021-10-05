@@ -1,11 +1,9 @@
 name: Publish
-
 on:
   push:
-    branches: [deploy]
-
+    branches: [ deploy ]
 jobs:
-  deploy:
+  run-lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code

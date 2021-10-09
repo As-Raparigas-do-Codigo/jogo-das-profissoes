@@ -13,25 +13,6 @@ $(document).ready(function() {
         height: getslideHeight
       });
     }
- 
-
-    /*
-    function animateContentColor() {
-      var getslideColor = $('.slide.active').attr('slide-color');
-  
-      $('body').css({
-        background: getslideColor
-      });
-  
-      $('.title').css({
-        color: getslideColor
-      });
-  
-      $('.btn').css({
-        color: getslideColor
-      });
-    }
-  */
 
     function animateContentColor() {
       var getslideColor = $('.slide.active').attr('slide-color');

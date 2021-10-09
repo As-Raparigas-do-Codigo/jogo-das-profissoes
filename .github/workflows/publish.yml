@@ -9,11 +9,11 @@ jobs:
       JDP_WEBDAV_URL: https://jogodasprofissoes.pt:2078
       GIT_REPO_PATH: /home/runner/work/jogo-das-profissoes/jogo-das-profissoes/
       SRC_MNT: /mnt/jogodasprofissoes
-      DEST_MTN: /mnt/cloud
+      DEST_MNT: /mnt/cloud
     steps:
       - name: Faz checkout do codigo do repositorio
         uses: actions/checkout@v2
       - name: Saca imagem de Docker
         run: docker pull qautomatron/docker-webdav-disk:latest
       - name: Arranca container, mosta o disco, copia os ficheiros
-        run: docker run --rm -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=${{ env.JDP_WEBDAV_URL }} --privileged --cap-add=ALL -v ${{ env.GIT_REPO_PATH }}:${{ env.SRC_MNT }} qautomatron/docker-webdav-disk cp -R ${{ env.SRC_MNT }} ${{ env.DEST_MTN }}
+        run: docker run --rm -e WEBDAV_USER=${{ secrets.JDP_USER }} -e WEBDAV_PASSWORD=${{ secrets.JDP_PWD }} -e WEBDAV_URL=${{ env.JDP_WEBDAV_URL }} --privileged --cap-add=ALL -v ${{ env.GIT_REPO_PATH }}:${{ env.SRC_MNT }} qautomatron/docker-webdav-disk cp -R ${{ env.SRC_MNT }} ${{ env.DEST_MNT }}

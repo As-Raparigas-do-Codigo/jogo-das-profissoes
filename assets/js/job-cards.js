@@ -1,4 +1,4 @@
-$(document).ready (function () {
+$(document).ready(function () {
   let getslideHeight = $('.slide.active').height()
 
   $('.slides').css({
@@ -14,7 +14,7 @@ $(document).ready (function () {
   }
 
   function animateContentColor () {
-    let getslideColor = $('.slide.active').attr('slide-color')
+    const getslideColor = $('.slide.active').attr('slide-color')
 
     $('body').css({
       background: getslideColor
@@ -29,13 +29,13 @@ $(document).ready (function () {
     })
   }
 
-  let slideItem = $('.slide'),
-    slideCurrentItem = slideItem.filter('.active')
+  const slideItem = $('.slide')
+  let slideCurrentItem = slideItem.filter('.active')
 
   $('#next').on('click', function (e) {
     e.preventDefault()
 
-    let nextItem = slideCurrentItem.next()
+    const nextItem = slideCurrentItem.next()
 
     slideCurrentItem.removeClass('active')
 
@@ -50,11 +50,11 @@ $(document).ready (function () {
   })
 
   $('#prev').on('click', function (e) {
-    e.preventDefault();
+    e.preventDefault()
 
-    let prevItem = slideCurrentItem.prev()
+    const prevItem = slideCurrentItem.prev()
 
-    slideCurrentItem.removeClass('active');
+    slideCurrentItem.removeClass('active')
 
     if (prevItem.length) {
       slideCurrentItem = prevItem.addClass('active')
@@ -68,12 +68,11 @@ $(document).ready (function () {
 
   // Ripple
   $('[ripple]').on('click', function (e) {
-    let rippleDiv = $('<div class="ripple" />'),
-      rippleSize = 60,
-      rippleOffset = $(this).offset(),
-      rippleY = e.pageY - rippleOffset.top,
-      rippleX = e.pageX - rippleOffset.left,
-      ripple = $('.ripple');
+    const rippleDiv = $('<div class="ripple" />')
+    const rippleSize = 60
+    const rippleOffset = $(this).offset()
+    const rippleY = e.pageY - rippleOffset.top
+    const rippleX = e.pageX - rippleOffset.left
 
     rippleDiv.css({
       top: rippleY - (rippleSize / 2),

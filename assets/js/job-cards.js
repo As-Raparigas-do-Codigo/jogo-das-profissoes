@@ -1,93 +1,87 @@
-$(document).ready(function() {
-  
-    var getslideHeight = $('.slide.active').height();
-  
+$(document).ready (function () {
+  let getslideHeight = $('.slide.active').height()
+
+  $('.slides').css({
+    height: getslideHeight
+  })
+
+  function calcslideHeight () {
+    getslideHeight = $('.slide.active').height()
+
     $('.slides').css({
       height: getslideHeight
-    });
-  
-    function calcslideHeight() {
-      getslideHeight = $('.slide.active').height();
-  
-      $('.slides').css({
-        height: getslideHeight
-      });
+    })
+  }
+
+  function animateContentColor () {
+    let getslideColor = $('.slide.active').attr('slide-color')
+
+    $('body').css({
+      background: getslideColor
+    })
+
+    $('.title').css({
+      color: getslideColor
+    })
+
+    $('.btn').css({
+      color: getslideColor
+    })
+  }
+
+  let slideItem = $('.slide'),
+    slideCurrentItem = slideItem.filter('.active')
+
+  $('#next').on('click', function (e) {
+    e.preventDefault()
+
+    let nextItem = slideCurrentItem.next()
+
+    slideCurrentItem.removeClass('active')
+
+    if (nextItem.length) {
+      slideCurrentItem = nextItem.addClass('active')
+    } else {
+      slideCurrentItem = slideItem.first().addClass('active')
     }
 
-    function animateContentColor() {
-      var getslideColor = $('.slide.active').attr('slide-color');
-  
-      
-      $('body').css({
-        background: getslideColor
-      });
-      
-  
-      $('.title').css({
-        color: getslideColor
-      });
-  
-      $('.btn').css({
-        color: getslideColor
-      });
-    }
-  
+    calcslideHeight()
+    animateContentColor()
+  })
 
-    var slideItem = $('.slide'),
-      slideCurrentItem = slideItem.filter('.active');
-  
-    $('#next').on('click', function(e) {
-      e.preventDefault();
-  
-      var nextItem = slideCurrentItem.next();
-  
-      slideCurrentItem.removeClass('active');
-  
-      if (nextItem.length) {
-  
-        slideCurrentItem = nextItem.addClass('active');
-      } else {
-        slideCurrentItem = slideItem.first().addClass('active');
-      }
-  
-      calcslideHeight();
-      animateContentColor();
-    });
-  
-    $('#prev').on('click', function(e) {
-      e.preventDefault();
-  
-      var prevItem = slideCurrentItem.prev();
-  
-      slideCurrentItem.removeClass('active');
-  
-      if (prevItem.length) {
-        slideCurrentItem = prevItem.addClass('active');
-      } else {
-        slideCurrentItem = slideItem.last().addClass('active');
-      }
-  
-      calcslideHeight();
-      animateContentColor();
-    });
-  
-    // Ripple
-    $('[ripple]').on('click', function(e) {
-      var rippleDiv = $('<div class="ripple" />'),
-        rippleSize = 60,
-        rippleOffset = $(this).offset(),
-        rippleY = e.pageY - rippleOffset.top,
-        rippleX = e.pageX - rippleOffset.left,
-        ripple = $('.ripple');
-  
-      rippleDiv.css({
-        top: rippleY - (rippleSize / 2),
-        left: rippleX - (rippleSize / 2),
-        background: $(this).attr("ripple-color")
-      }).appendTo($(this));
-  
-      window.setTimeout(function() {
-        rippleDiv.remove();
-      }, 1900);
-    });
-  });
+  $('#prev').on('click', function (e) {
+    e.preventDefault();
+
+    let prevItem = slideCurrentItem.prev()
+
+    slideCurrentItem.removeClass('active');
+
+    if (prevItem.length) {
+      slideCurrentItem = prevItem.addClass('active')
+    } else {
+      slideCurrentItem = slideItem.last().addClass('active')
+    }
+
+    calcslideHeight()
+    animateContentColor()
+  })
+
+  // Ripple
+  $('[ripple]').on('click', function (e) {
+    let rippleDiv = $('<div class="ripple" />'),
+      rippleSize = 60,
+      rippleOffset = $(this).offset(),
+      rippleY = e.pageY - rippleOffset.top,
+      rippleX = e.pageX - rippleOffset.left,
+
+    rippleDiv.css({
+      top: rippleY - (rippleSize / 2),
+      left: rippleX - (rippleSize / 2),
+      background: $(this).attr('ripple-color')
+    }).appendTo($(this))
+
+    window.setTimeout(function () {
+      rippleDiv.remove()
+    }, 1900)
+  })
+})

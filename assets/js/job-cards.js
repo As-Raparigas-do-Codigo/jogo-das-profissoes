@@ -73,6 +73,7 @@ $(document).ready (function () {
       rippleOffset = $(this).offset(),
       rippleY = e.pageY - rippleOffset.top,
       rippleX = e.pageX - rippleOffset.left,
+      ripple = $('.ripple');
 
     rippleDiv.css({
       top: rippleY - (rippleSize / 2),

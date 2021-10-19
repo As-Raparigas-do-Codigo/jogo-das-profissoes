@@ -1,11 +1,10 @@
+# Nota para quem não falar português
 <details>
   <summary>Note for non-Portuguese Speaking Contributors</summary>
   
-  This project was made open source in order to encourage contributions from Portuguese students enrolled in the "As Raparigas do Código" project and, as such, will be mostly written in Portuguese. 
-  
-  https://raparigasdocodigo.pt/
+  This project was made open source in order to encourage contributions from Portuguese students enrolled in the "[As Raparigas do Código](https://raparigasdocodigo.pt/)" project and, as such, will be mostly written in Portuguese.
 
-  However, if you'd like to contribute, we will accept PRs in English. 
+  However, if you'd like to contribute, we will accept PRs in English.
   
   Thank you!
 </details>
@@ -51,7 +50,7 @@ Finalmente, caso tenhas qualquer dúvida durante a tua contribuição, deixa a t
 
 1. Clona o projecto para o teu computador usando o Github Desktop ou a linha de comandos/terminal:
 
-  ```
+  ```bash
   ~ git clone https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes.git
   ```
 

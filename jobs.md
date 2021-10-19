@@ -1,12 +1,12 @@
 # Jogo das Profissões
-Quando fores grande, o que queres ser?   
+Quando fores grande, o que queres ser?
 Há tantas profissões para conhecer!  
 Vira as cartas bem depressa  
 E terás uma surpresa!  
 Quantos pares irás encontrar?  
 Carrega no botão e vamos jogar!  
 
-# As Profissões
+## As Profissões
 Quando for grande, o que quero ser?  
 Astronauta, para viajar num foguetão!  
 Ou pilota, a comandar um avião!  
@@ -33,7 +33,7 @@ O Mário adora cuidar de bebés. E dá-lhes banho da cabeça aos pés. Quando um
 O Marcelino sempre quis ser bailarino. Adora dançar e passa os dias a praticar! Faz piruetas sem cair no chão e dança ao ritmo de qualquer canção.
 
 ## Luísa, Futebolista
-Corre depressa como uma chita e só para quando o árbitro apita! Em qualquer equipa, todos querem a Luísa. Quando chuta a bola, vai direta à baliza! 
+Corre depressa como uma chita e só para quando o árbitro apita! Em qualquer equipa, todos querem a Luísa. Quando chuta a bola, vai direta à baliza!
 
 ## Martim, Veterinário
 O Martim adora animais. Cuida deles quando estão doentes! No consultório trata cães, gatos e muito mais. Até leões com dor de dentes!
@@ -42,10 +42,10 @@ O Martim adora animais. Cuida deles quando estão doentes! No consultório trata
 A Paula é desde criança que anda a sonhar em ver o mundo inteiro a voar. Já foi à China e até ao Japão. E gostava de ter o seu próprio avião!
 
 ## Hugo, Professor
-O Hugo achava que os números deixavam as crianças tontas! Hoje mostra que é fácil fazer contas. Com muita prática, ensina Matemática. 
+O Hugo achava que os números deixavam as crianças tontas! Hoje mostra que é fácil fazer contas. Com muita prática, ensina Matemática.
 
 ## Joana, Engenheira
-A Joana brincava às casinhas quando tinha a tua idade! Agora faz casas para pessoas de verdade! Protegem do calor e de qualquer tempestade. 
+A Joana brincava às casinhas quando tinha a tua idade! Agora faz casas para pessoas de verdade! Protegem do calor e de qualquer tempestade.
 
 ## Tiago, Enfermeiro
 O Tiago sabe cuidar, se uma criança se aleijar. Ajuda o avô se ele cair, e põe toda a gente a sorrir. Salva vidas sem hesitar, é uma pessoa com quem podemos contar.

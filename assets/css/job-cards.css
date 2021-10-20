@@ -102,7 +102,6 @@ h1.title {
 
 [ripple] .ripple {
   position: absolute;
-  /*background: #FFFFFF;*/
   width: 60px;
   height: 60px;
   border-radius: 100%;

@@ -99,7 +99,7 @@
 .game-card {
     padding: 0;
 }
-/*Difficulty levels*/
+
 h3 {
     margin: 20px;
 }
@@ -141,10 +141,6 @@ h3 {
 .difficulty span {
     pointer-events: none;
 }
-
-/*
-  * Clock and guesses
-  */
 
 .trackers-wrapper {
     display: flex;
@@ -237,21 +233,6 @@ h3 {
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
-
-/*
-* Clock and guesses
-*/
-
-/*
-* Styles for modal
-*/
-/*
- * Styles for congratulations modal
- */
-
-/*
-  * Pop up & overlay
-*/
 
 .overlay {
     position: fixed;

@@ -156,12 +156,6 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
-.navbar-mobile a {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #213b52;
-}
-
 .navbar a:hover {
   color: var(--color-primary);
 }
@@ -176,12 +170,6 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar-mobile .getstarted {
-  margin: 15px;
-  display: block;
-  border: 0;
-}
-
 .navbar .getstarted {
   color: var(--white);
   padding: 4px 25px 6px 25px;
@@ -193,42 +181,6 @@ h6 {
 .navbar .getstarted:hover {
   background: var(--color-primary);
   color: #213b52;
-}
-
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  border-radius: 10px;
-  background-color: var(--white);
-  overflow-y: auto;
-  transition: 0.3s;
-}
-
-.navbar-mobile a:hover,
-.navbar-mobile .active,
-.navbar-mobile li:hover > a {
-  color: #fdc134;
-}
-
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: var(--white);
-  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
 }
 
 .navbar .dropdown ul {
@@ -302,6 +254,60 @@ h6 {
 * Mobile Navigation
 */
 
+.navbar-mobile a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #213b52;
+}
+
+.navbar-mobile .getstarted {
+  margin: 15px;
+  display: block;
+  border: 0;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: var(--white);
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: #fdc134;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: var(--white);
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
+  color: #fdc134;
+}
+
 .mobile-nav-toggle {
   color: #fdc134;
   font-size: 28px;
@@ -350,12 +356,6 @@ h6 {
 
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a {
-  color: #fdc134;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {

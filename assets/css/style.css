@@ -183,6 +183,20 @@ h6 {
   color: #213b52;
 }
 
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: var(--white);
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
 .navbar .dropdown ul {
   display: block;
   position: absolute;
@@ -294,20 +308,6 @@ h6 {
   position: absolute;
   top: 15px;
   right: 15px;
-}
-
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  border-radius: 10px;
-  background-color: var(--white);
-  overflow-y: auto;
-  transition: 0.3s;
 }
 
 .navbar-mobile a {

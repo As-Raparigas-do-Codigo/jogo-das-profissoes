@@ -176,6 +176,12 @@ h6 {
   margin-left: 5px;
 }
 
+.navbar-mobile .getstarted {
+  margin: 15px;
+  display: block;
+  border: 0;
+}
+
 .navbar .getstarted {
   color: var(--white);
   padding: 4px 25px 6px 25px;
@@ -207,6 +213,18 @@ h6 {
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
   color: #fdc134;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: var(--white);
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
 }
 
 .navbar .dropdown ul {
@@ -320,24 +338,6 @@ h6 {
   position: absolute;
   top: 15px;
   right: 15px;
-}
-
-.navbar-mobile .getstarted {
-  margin: 15px;
-  display: block;
-  border: 0;
-}
-
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: var(--white);
-  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
 }
 
 .navbar-mobile .dropdown ul li {

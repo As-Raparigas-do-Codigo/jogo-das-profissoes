@@ -627,7 +627,6 @@ img.logo-support {
 -------------------------------------------------------------- */
 
 @keyframes shake {
-
   0% {
     transform: translate(1px, 1px) rotate(0deg);
   }
@@ -674,7 +673,6 @@ img.logo-support {
 }
 
 @-webkit-keyframes animate-loading {
-
   0% {
     transform: rotate(0deg);
   }
@@ -685,7 +683,6 @@ img.logo-support {
 }
 
 @keyframes animate-loading {
-
   0% {
     transform: rotate(0deg);
   }

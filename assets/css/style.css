@@ -292,6 +292,12 @@ h6 {
   }
 }
 
+.navbar-mobile a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #213b52;
+}
+
 .navbar-mobile {
   position: fixed;
   overflow: hidden;
@@ -308,12 +314,6 @@ h6 {
   position: absolute;
   top: 15px;
   right: 15px;
-}
-
-.navbar-mobile a {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #213b52;
 }
 
 .navbar-mobile a:hover,

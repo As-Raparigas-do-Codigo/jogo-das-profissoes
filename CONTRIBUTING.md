@@ -1,4 +1,6 @@
-# Nota para quem não falar português
+# Guia de Contribuição
+
+## Nota para quem não falar português
 <details>
   <summary>Note for non-Portuguese Speaking Contributors</summary>
   
@@ -9,7 +11,7 @@
   Thank you!
 </details>
 
-# Como Contribuir
+## Como Contribuir
 
 1. Vai até à [tab de "Issues"](https://github.com/As-Raparigas-do-Codigo/jogo-das-profissoes/issues) e escolhe um issue que tenha a label `Hacktoberfest`:
 
@@ -46,7 +48,7 @@ Finalmente, caso tenhas qualquer dúvida durante a tua contribuição, deixa a t
 
 --------
 
-# Intruções para correr o projeto
+## Intruções para correr o projeto
 
 1. Clona o projecto para o teu computador usando o Github Desktop ou a linha de comandos/terminal:
 

@@ -49,7 +49,7 @@ h6 {
   text-align: center;
 }
 
-.heading:after {
+.heading::after {
   content: " ";
   position: absolute;
   top: 100%;
@@ -124,7 +124,7 @@ h6 {
 -------------------------------------------------------------- */
 
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 
 .navbar {
@@ -241,16 +241,18 @@ h6 {
 }
 
 @media (max-width: 1366px) {
+
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
+
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
-/* *
-* Mobile Navigation 
+/**
+* Mobile Navigation
 */
 
  .mobile-nav-toggle {
@@ -545,7 +547,7 @@ span.play-button {
 -------------------------------------------------------------- */
 
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 
  h6.contacts {
@@ -625,54 +627,69 @@ img.logo-support {
 -------------------------------------------------------------- */
 
 @keyframes shake {
+
   0% {
     transform: translate(1px, 1px) rotate(0deg);
   }
+
   10% {
     transform: translate(-1px, -2px) rotate(-1deg);
   }
+
   20% {
     transform: translate(-3px, 0) rotate(1deg);
   }
+
   30% {
     transform: translate(3px, 2px) rotate(0deg);
   }
+
   40% {
     transform: translate(1px, -1px) rotate(1deg);
   }
+
   50% {
     transform: translate(-1px, 2px) rotate(-1deg);
   }
+
   60% {
     transform: translate(-3px, 1px) rotate(0deg);
   }
+
   70% {
     transform: translate(3px, 1px) rotate(-1deg);
   }
+
   80% {
     transform: translate(-1px, -1px) rotate(1deg);
   }
+
   90% {
     transform: translate(1px, 2px) rotate(0deg);
   }
+
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 
 @-webkit-keyframes animate-loading {
+
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
 
 @keyframes animate-loading {
+
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

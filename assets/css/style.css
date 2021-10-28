@@ -1,4 +1,4 @@
-/* Our default values set as CSS variables */
+/*  Our default values set as CSS variables  */
 :root {
   --white: #fff;
   --color-text-primary: #828282;
@@ -7,7 +7,7 @@
   --color-secondary: #cc9fd0;
 }
 
-/* Basic page style resets */
+/*  Basic page style resets  */
 
 * {
   box-sizing: border-box;
@@ -38,7 +38,7 @@ h6 {
   color: var(--color-text-secondary);
 }
 
-/* Reusable page style */
+/*  Reusable page style  */
 
 .heading {
   position: relative;
@@ -49,12 +49,12 @@ h6 {
   text-align: center;
 }
 
-.heading::after {
+.heading:after {
   content: " ";
   position: absolute;
   top: 100%;
   left: 50%;
-  width: 100;
+  width: 100px;
   border: 2px solid var(--color-primary);
   background-color: var(--color-primary);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -62,7 +62,7 @@ h6 {
 }
 
 .separator {
-  margin-bottom: 100;
+  margin-bottom: 100px;
 }
 
 /* --------------------------------------------------------------
@@ -77,9 +77,9 @@ h6 {
   bottom: 15px;
   z-index: 99999;
   background: #213b52;
-  width: 40;
-  height: 40;
-  border-radius: 50;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
   transition: all 0.4s;
 }
 
@@ -102,6 +102,7 @@ h6 {
 /* --------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 -------------------------------------------------------------- */
+
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
@@ -115,7 +116,7 @@ h6 {
 .header-content {
   display: flex;
   justify-content: flex-end;
-  padding: 10 70;
+  padding: 10px 70px;
 }
 
 /* --------------------------------------------------------------
@@ -123,7 +124,7 @@ h6 {
 -------------------------------------------------------------- */
 
 /**
-* Desktop Navigation
+* Desktop Navigation 
 */
 
 .navbar {
@@ -147,7 +148,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10 20 10 0;
+  padding: 10px 20px 10px 0;
   font-size: 1.4em;
   color: var(--white);
   white-space: nowrap;
@@ -172,8 +173,8 @@ h6 {
 .navbar .getstarted {
   color: var(--white);
   padding: 4px 25px 6px 25px;
-  margin-left: 30;
-  border-radius: 50;
+  margin-left: 30px;
+  border-radius: 50px;
   border: 2px solid var(--color-primary);
 }
 
@@ -186,24 +187,24 @@ h6 {
   display: block;
   position: absolute;
   left: 14px;
-  top: calc(100% + 30);
+  top: calc(100% + 30px);
   margin: 0;
-  padding: 10 0;
+  padding: 10px 0;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
   background: var(--white);
-  box-shadow: 0 0 30 rgba(127, 137, 161, 0.25);
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
 }
 
 .navbar .dropdown ul li {
-  min-width: 200;
+  min-width: 200px;
 }
 
 .navbar .dropdown ul a {
-  padding: 10 20;
+  padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
@@ -228,7 +229,7 @@ h6 {
 
 .navbar .dropdown .dropdown ul {
   top: 0;
-  left: calc(100% - 30);
+  left: calc(100% - 30px);
   visibility: hidden;
 }
 
@@ -243,17 +244,16 @@ h6 {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
-
   .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
 
-/**
-* Mobile Navigation
+/* *
+* Mobile Navigation 
 */
 
-.mobile-nav-toggle {
+ .mobile-nav-toggle {
   color: #fdc134;
   font-size: 28px;
   cursor: pointer;
@@ -288,6 +288,12 @@ h6 {
   z-index: 999;
 }
 
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
 .navbar-mobile ul {
   display: block;
   position: absolute;
@@ -295,21 +301,15 @@ h6 {
   right: 15px;
   bottom: 15px;
   left: 15px;
-  padding: 10 0;
-  border-radius: 10;
+  padding: 10px 0;
+  border-radius: 10px;
   background-color: var(--white);
   overflow-y: auto;
   transition: 0.3s;
 }
 
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
-
 .navbar-mobile a {
-  padding: 10 20;
+  padding: 10px 20px;
   font-size: 15px;
   color: #213b52;
 }
@@ -329,21 +329,21 @@ h6 {
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
-  margin: 10 20;
-  padding: 10 0;
+  margin: 10px 20px;
+  padding: 10px 0;
   z-index: 99;
   opacity: 1;
   visibility: visible;
   background: var(--white);
-  box-shadow: 0 0 30 rgba(127, 137, 161, 0.25);
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
 }
 
 .navbar-mobile .dropdown ul li {
-  min-width: 200;
+  min-width: 200px;
 }
 
 .navbar-mobile .dropdown ul a {
-  padding: 10 20;
+  padding: 10px 20px;
 }
 
 .navbar-mobile .dropdown ul a i {
@@ -372,8 +372,8 @@ h6 {
 .intro h1 {
   font-size: 48px;
   font-weight: 700;
-  line-height: 80;
-  margin-bottom: 30;
+  line-height: 80px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 992px) {
@@ -392,11 +392,11 @@ h6 {
 }
 
 .indented {
-  text-indent: 50;
+  text-indent: 50px;
 }
 
 .intro {
-  min-height: 800;
+  min-height: 800px;
   height: auto;
 }
 
@@ -413,9 +413,9 @@ h6 {
   }
 
   .intro-img {
-    width: 700;
-    mask-size: 700;
-    -webkit-mask-size: 700;
+    width: 700px;
+    mask-size: 700px;
+    -webkit-mask-size: 700px;
     mask-image: url(../img/mask.svg);
     -webkit-mask-image: url(../img/mask.svg);
     mask-position: center;
@@ -424,27 +424,27 @@ h6 {
   }
 }
 
-@media (min-width: 1440) {
+@media (min-width: 1440px) {
   .intro-img {
-    width: 800;
+    width: 800px;
     mask-image: url(../img/mask.svg);
     -webkit-mask-image: url(../img/mask.svg);
     mask-position: center;
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
-    mask-size: 800;
-    -webkit-mask-size: 800;
+    mask-size: 800px;
+    -webkit-mask-size: 800px;
   }
 
   .intro {
-    min-height: 850;
+    min-height: 850px;
   }
 }
 
 .start-button {
   display: flex;
   margin: 0;
-  padding: 10 20;
+  padding: 10px 20px;
   border: 0;
   border-radius: 4px;
   font-family: "Poppins", helvetica, sans-serif;
@@ -452,7 +452,7 @@ h6 {
   cursor: pointer;
   overflow: hidden;
   place-items: center;
-  margin-top: 70;
+  margin-top: 70px;
 }
 
 span.play-button {
@@ -461,11 +461,11 @@ span.play-button {
 }
 
 .rocket {
-  width: 60;
+  width: 60px;
   height: 34px;
-  margin-left: 10;
+  margin-left: 10px;
   background: url("../img/rocket.png") right center no-repeat;
-  background-size: 60;
+  background-size: 60px;
 }
 
 .start-button:hover .rocket {
@@ -483,7 +483,7 @@ span.play-button {
 -------------------------------------------------------------- */
 
 .about .content {
-  padding: 30 0;
+  padding: 30px 0;
 }
 
 .about .content h3 {
@@ -501,9 +501,9 @@ span.play-button {
 }
 
 .about .content .icon-box h4 {
-  font-size: 20;
+  font-size: 20px;
   font-weight: 700;
-  margin: 5px 0 10 60;
+  margin: 5px 0 10px 60px;
   color: #213b52;
 }
 
@@ -525,13 +525,13 @@ span.play-button {
 .about .content .icon-box p {
   font-size: 15px;
   color: #848484;
-  margin-left: 60;
+  margin-left: 60px;
 }
 
 .about .image {
   background: url("../img/about.jpg") center center no-repeat;
   background-size: cover;
-  min-height: 400;
+  min-height: 400px;
 }
 
 @media (max-width: 667px) {
@@ -548,7 +548,7 @@ span.play-button {
 * Desktop Navigation 
 */
 
-h6.contacts {
+ h6.contacts {
   color: var(--color-text-secondary) !important;
 }
 
@@ -565,23 +565,23 @@ img.logo-wit {
 }
 
 img.logo-ardc {
-  margin-top: 10;
+  margin-top: 10px;
   width: 80%;
   height: 80%;
-  margin-right: 10;
+  margin-right: 10px;
 }
 
 img.logo-designer {
-  margin-top: 10;
+  margin-top: 10px;
   width: 80%;
   height: 80%;
-  margin-left: 10;
+  margin-left: 10px;
 }
 
 img.logo-ces {
   width: 110%;
   height: 80%;
-  margin-top: 10;
+  margin-top: 10px;
 }
 
 img.logo-support {
@@ -598,7 +598,7 @@ img.logo-support {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top left;
-  height: 400;
+  height: 400px;
   margin: 0 !important;
   position: relative;
   width: 100%;
@@ -606,7 +606,7 @@ img.logo-support {
 
 .footer-text {
   position: absolute;
-  bottom: 20;
+  bottom: 20px;
   width: 100%;
   text-align: right;
   text-align: center;

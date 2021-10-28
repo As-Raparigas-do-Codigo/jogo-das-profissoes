@@ -120,6 +120,68 @@ h6 {
 }
 
 /* --------------------------------------------------------------
+# About
+-------------------------------------------------------------- */
+
+.about .content {
+  padding: 30px 0;
+}
+
+.about .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  color: #213b52;
+}
+
+.about .content p {
+  margin-bottom: 0;
+}
+
+.about .content .icon-box {
+  margin-top: 25px;
+}
+
+.about .content .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px 60px;
+  color: #213b52;
+}
+
+.about .content .icon-box h4 a {
+  color: #213b52;
+  transition: 0.3s;
+}
+
+.about .content .icon-box h4 a:hover {
+  color: #fdc134;
+}
+
+.about .content .icon-box i {
+  font-size: 48px;
+  float: left;
+  color: #fdc134;
+}
+
+.about .content .icon-box p {
+  font-size: 15px;
+  color: #848484;
+  margin-left: 60px;
+}
+
+.about .image {
+  background: url("../img/about.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
+@media (max-width: 667px) {
+  .about .image img {
+    max-width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------
 # Navigation Menu
 -------------------------------------------------------------- */
 
@@ -225,6 +287,10 @@ h6 {
   visibility: visible;
   background: var(--white);
   box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
 }
 
 .navbar .dropdown ul {
@@ -342,10 +408,6 @@ h6 {
 
 .navbar-mobile .dropdown ul li {
   min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
 }
 
 .navbar-mobile .dropdown ul a i {
@@ -478,68 +540,6 @@ span.play-button {
 #main-section .btn-get-started:hover {
   background: transparent;
   color: #fdc134;
-}
-
-/* --------------------------------------------------------------
-# About
--------------------------------------------------------------- */
-
-.about .content {
-  padding: 30px 0;
-}
-
-.about .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  color: #213b52;
-}
-
-.about .content p {
-  margin-bottom: 0;
-}
-
-.about .content .icon-box {
-  margin-top: 25px;
-}
-
-.about .content .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 5px 0 10px 60px;
-  color: #213b52;
-}
-
-.about .content .icon-box h4 a {
-  color: #213b52;
-  transition: 0.3s;
-}
-
-.about .content .icon-box h4 a:hover {
-  color: #fdc134;
-}
-
-.about .content .icon-box i {
-  font-size: 48px;
-  float: left;
-  color: #fdc134;
-}
-
-.about .content .icon-box p {
-  font-size: 15px;
-  color: #848484;
-  margin-left: 60px;
-}
-
-.about .image {
-  background: url("../img/about.jpg") center center no-repeat;
-  background-size: cover;
-  min-height: 400px;
-}
-
-@media (max-width: 667px) {
-  .about .image img {
-    max-width: 100%;
-  }
 }
 
 /* --------------------------------------------------------------

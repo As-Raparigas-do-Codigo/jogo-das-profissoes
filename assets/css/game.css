@@ -74,8 +74,7 @@
 }
 
 #jogo .front {
-  background: url("../img/cardback_yellow.png") no-repeat center center /
-  cover;
+  background: url("../img/cardback_yellow.png") no-repeat center center cover;
 }
 
 #jogo .back {
@@ -260,7 +259,7 @@ h3 {
 .popup {
   margin: 70px auto;
   padding: 40px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 5px;
   width: 60%;
   min-height: 335px;
@@ -311,7 +310,7 @@ h3 {
   .popup {
     width: 100%;
   }
-  
+
   .popup img {
     width: 100px;
     height: auto;
@@ -349,7 +348,7 @@ h3 {
   padding: 30px 0;
 }
 
-.game-section::before {
+.game-section:before {
   content: "";
   background: url("../img/gameboard.png") center center;
   background-size: cover;
@@ -362,7 +361,7 @@ h3 {
   opacity: 0.75;
 }
 
-.game-section.hidden::before {
+.game-section.hidden:before {
   display: none;
 }
 

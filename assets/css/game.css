@@ -49,6 +49,10 @@
   }
 }
 
+.game-card {
+  padding: 0;
+}
+
 #jogo .game-card {
   position: relative;
   -webkit-transition: all 0.4s linear;
@@ -86,6 +90,16 @@
   background-position: center center;
 }
 
+.selected {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.match {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
 #jogo .selected {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
@@ -94,10 +108,6 @@
 #jogo .match {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-}
-
-.game-card {
-  padding: 0;
 }
 
 h3 {
@@ -222,16 +232,6 @@ h3 {
   .game {
     margin: 0;
   }
-}
-
-.selected {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-
-.match {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
 }
 
 .overlay {

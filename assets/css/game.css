@@ -1,153 +1,153 @@
 #jogo {
-    text-align: center;
+  text-align: center;
 }
 
 #jogo h1 {
-    color: black;
-    font-family: "Nunito", sans-serif;
-    font-size: 58px;
-    font-weight: 900;
-    letter-spacing: 0.05em;
+  color: black;
+  font-family: "Nunito", sans-serif;
+  font-size: 58px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
 }
 
 .game-running {
-    display: flex;
+  display: flex;
 }
 
 .game-hidden {
-    display: none;
+  display: none;
 }
 
 .difficulty-hidden {
-    display: none !important;
+  display: none !important;
 }
 
 #jogo .grid {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    padding: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 0;
 }
 
 .easy {
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .medium {
-    grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 
 .hard {
-    grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
 @media screen and (max-width: 768px) {
- .hard,
- .medium,
- .easy {
-  grid-template-columns: repeat(2, 1fr);
+  .hard,
+  .medium,
+  .easy {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 #jogo .game-card {
-    position: relative;
-    -webkit-transition: all 0.4s linear;
-    -o-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    margin: 5px;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  margin: 5px;
 }
 
 #jogo .game-card,
 #jogo .back,
 #jogo .front {
-    height: 160px;
-    width: 140px;
+  height: 160px;
+  width: 140px;
 }
 
 #jogo .back,
 #jogo .front {
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 #jogo .front {
-    background: url("../img/cardback_yellow.png") no-repeat center center /
-        cover;
+  background: url("../img/cardback_yellow.png") no-repeat center center /
+  cover;
 }
 
 #jogo .back {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 #jogo .selected {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 #jogo .match {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .game-card {
-    padding: 0;
+  padding: 0;
 }
 
 h3 {
-    margin: 20px;
+  margin: 20px;
 }
 
 .difficulty-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 5px;
-    margin: 0 auto;
-    display: flex;
-    min-height: 300px;
-    flex-direction: column;
-    justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .difficulty-wrapper {
-    display: flex;   
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
+  display: flex;   
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 .difficulty {
-    min-width: 120px;
-    height: 100px;
-    background-color: var(--color-primary);
-    border-radius: 4px;
-    border: 0;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    padding: 10px;
-    margin: 0 5px;
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
+  min-width: 120px;
+  height: 100px;
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  margin: 0 5px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
 .difficulty span {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .trackers-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px;
 }
 
 .trackers-display {
@@ -159,63 +159,64 @@ h3 {
     flex-wrap: wrap;
     margin-bottom: 20px;
   }
+
   .trackers {
     margin-bottom: 20px;
   }
 }
 
 .trackers {
-    width: 160px;
-    height: 70px;
-    background-color: white;
-    margin-right: 20px;
-    border-radius: 4px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
+  width: 160px;
+  height: 70px;
+  background-color: white;
+  margin-right: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
 .trackers-hidden {
-    display: none;
+  display: none;
 }
 
 .change-game-btns {
-    display: flex;
+  display: flex;
 }
 
 .change-game-btns button:first-of-type {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .button-secondary {
-    display: flex;
-    margin: 0;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border: 0;
-    border-radius: 4px;
-    font-family: "Poppins", helvetica, sans-serif;
-    font-size: 22px;
-    background-color: var(--color-secondary);
+  display: flex;
+  margin: 0;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: 0;
+  border-radius: 4px;
+  font-family: "Poppins", helvetica, sans-serif;
+  font-size: 22px;
+  background-color: var(--color-secondary);
 }
 
 #jogadas,
 #timer {
-    margin-left: 10px;
-    width: 75%;
-    display: flex;
-    justify-content: center;
+  margin-left: 10px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
 }
 
 .game {
-    justify-content: center;
-    background-color: white;
-    border-radius: 16px;
-    padding: 48px;
-    margin: 0 40px;
+  justify-content: center;
+  background-color: white;
+  border-radius: 16px;
+  padding: 48px;
+  margin: 0 40px;
 }
 
 @media screen and (max-width: 768px) {
@@ -225,80 +226,80 @@ h3 {
 }
 
 .selected {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .match {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    display: none;
-    opacity: 0;
-    z-index: 50;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  display: none;
+  opacity: 0;
+  z-index: 50;
 }
 
 .overlay:target {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 
 #popup_jogo {
-    align-items: center;
+  align-items: center;
 }
 
 .popup {
-    margin: 70px auto;
-    padding: 40px;
-    background: #ffffff;
-    border-radius: 5px;
-    width: 60%;
-    min-height: 335px;
-    position: relative;
-    transition: all 5s ease-in-out;
-    z-index: 100;
+  margin: 70px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 5px;
+  width: 60%;
+  min-height: 335px;
+  position: relative;
+  transition: all 5s ease-in-out;
+  z-index: 100;
 }
 
 .popup h2 {
-    margin: 10px 0 30px;
+  margin: 10px 0 30px;
 }
 
 .popup .content-1,
 .content-2 {
-    overflow: auto;
-    text-align: center;
+  overflow: auto;
+  text-align: center;
 }
 
 .popup .content-1 p {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .popup .content-1 p * {
-    width: 50%;
-    text-align: right;
+  width: 50%;
+  text-align: right;
 }
 
 .popup .content-1 p *:last-child {
-    text-align: left;
-    margin-left: 10px;
+  text-align: left;
+  margin-left: 10px;
 }
 
 .popup img {
-    height: 90%;
-    position: absolute;
-    left: -100px;
-    top: 30px;
+  height: 90%;
+  position: absolute;
+  left: -100px;
+  top: 30px;
 }
 
 .popup img:last-of-type {
@@ -310,7 +311,7 @@ h3 {
   .popup {
     width: 100%;
   }
-
+  
   .popup img {
     width: 100px;
     height: auto;
@@ -324,48 +325,47 @@ h3 {
   }
 }
 
-
 .overlay:target {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .show {
-    display: flex;
-    opacity: 100 !important;
+  display: flex;
+  opacity: 100 !important;
 }
 
 #starRating li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .game-section {
-    position: relative;
-    min-height: 700px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0;
+  position: relative;
+  min-height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
 }
 
-.game-section:before {
-    content: "";
-    background: url("../img/gameboard.png") center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.75;
+.game-section::before {
+  content: "";
+  background: url("../img/gameboard.png") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.75;
 }
 
-.game-section.hidden:before {
-    display: none;
+.game-section.hidden::before {
+  display: none;
 }
 
 .game-section.active {
-    background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }

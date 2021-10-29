@@ -116,7 +116,7 @@ h3 {
 }
 
 .difficulty-wrapper {
-  display: flex;   
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
@@ -193,9 +193,8 @@ h3 {
 
 .button-secondary {
   display: flex;
-  margin: 0;
-  padding: 10px 20px;
   margin: 0 10px;
+  padding: 10px 20px;
   border: 0;
   border-radius: 4px;
   font-family: "Poppins", helvetica, sans-serif;
@@ -320,6 +319,7 @@ h3 {
     top: 50%;
     transform: translateY(-50%);
   }
+
   .popup img:last-of-type {
     right: 0;
   }

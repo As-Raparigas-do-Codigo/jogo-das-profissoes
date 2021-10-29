@@ -78,8 +78,7 @@
 }
 
 #jogo .front {
-  background: url("../img/cardback_yellow.png") no-repeat center center /
-    cover;
+  background: url("../img/cardback_yellow.png") no-repeat center center;
 }
 
 #jogo .back {

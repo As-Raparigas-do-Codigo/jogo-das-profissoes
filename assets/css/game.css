@@ -155,7 +155,7 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  .trackers-display{
+  .trackers-display {
     flex-wrap: wrap;
     margin-bottom: 20px;
   }
@@ -248,6 +248,7 @@ h3 {
 }
 
 .overlay:target {
+  visibility: visible;
   display: block;
   opacity: 1;
 }
@@ -323,11 +324,6 @@ h3 {
   .popup img:last-of-type {
     right: 0;
   }
-}
-
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
 }
 
 .show {

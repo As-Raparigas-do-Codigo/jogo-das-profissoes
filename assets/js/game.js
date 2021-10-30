@@ -1,177 +1,168 @@
-'use strict';
+'use strict'
 
-
-var cardsArray = [{
-  'name': 'astronauta',
-  'img': 'assets/img/jobs/astronauta.png'
-}, /*{
+let cardsArray = [{
+  name: 'astronauta',
+  img: 'assets/img/jobs/astronauta.png'
+}, /* {
   'name': 'babysitter',
   'img': 'assets/img/jobs/babysitter.png'
-},*/ {
-  'name': 'bailarino',
-  'img': 'assets/img/jobs/bailarino.png'
+}, */ {
+  name: 'bailarino',
+  img: 'assets/img/jobs/bailarino.png'
 }, {
-  'name': 'ceo',
-  'img': 'assets/img/jobs/ceo.png'
+  name: 'ceo',
+  img: 'assets/img/jobs/ceo.png'
 }, {
-  'name': 'enfermeiro',
-  'img': 'assets/img/jobs/enfermeiro.png'
+  name: 'enfermeiro',
+  img: 'assets/img/jobs/enfermeiro.png'
 }, {
-  'name': 'engenheira',
-  'img': 'assets/img/jobs/engenheira.png'
+  name: 'engenheira',
+  img: 'assets/img/jobs/engenheira.png'
 }, {
-  'name': 'footballer',
-  'img': 'assets/img/jobs/futebolista.png'
+  name: 'footballer',
+  img: 'assets/img/jobs/futebolista.png'
 }, {
-  'name': 'piloto',
-  'img': 'assets/img/jobs/piloto.png'
+  name: 'piloto',
+  img: 'assets/img/jobs/piloto.png'
 }, {
-  'name': 'professor',
-  'img': 'assets/img/jobs/professor.png'
+  name: 'professor',
+  img: 'assets/img/jobs/professor.png'
 }, {
-  'name': 'veterinario',
-  'img': 'assets/img/jobs/veterinario.png'
+  name: 'veterinario',
+  img: 'assets/img/jobs/veterinario.png'
 }
-];
+]
 
-var firstGuess = '';
-var secondGuess = '';
-var count = 0;
-var matches = 0;
-var previousTarget = null;
-var delay = 1200;
+let firstGuess = ''
+let secondGuess = ''
+let count = 0
+let matches = 0
+let previousTarget = null
 
+let game = document.getElementById('game')
+let grid = document.createElement('section')
+grid.setAttribute('class', 'grid')
+game.appendChild(grid)
 
-var game = document.getElementById('game');
-var grid = document.createElement('section');
-grid.setAttribute('class', 'grid');
-game.appendChild(grid);
-
-var match = function match() {
-  var selected = document.querySelectorAll('.selected');
+let match = function match () {
+  let selected = document.querySelectorAll('.selected');
   selected.forEach(function (card) {
-    card.classList.add('match');
-    card.classList.remove('selected');
-  });
-  resetGuesses();
-};
-
-var removeSelected = function removeSelected() {
-  var selected = document.querySelectorAll('.selected');
-  selected.forEach(function (card) {
-    card.classList.remove('selected');
-  });
-  resetGuesses();
+    card.classList.add('match')
+    card.classList.remove('selected')
+  })
+  resetGuesses()
 }
 
-var resetGuesses = function resetGuesses() {
-  firstGuess = '';
-  secondGuess = '';
-  count = 0;
-  previousTarget = null;
-};
+let removeSelected = function removeSelected () {
+  let selected = document.querySelectorAll('.selected')
+  selected.forEach(function (card) {
+    card.classList.remove('selected')
+  })
+  resetGuesses()
+}
 
+let resetGuesses = function resetGuesses () {
+  firstGuess = ''
+  secondGuess = ''
+  count = 0
+  previousTarget = null
+}
 
 grid.addEventListener('click', function (event) {
-  var clicked = event.target;
+  let clicked = event.target
 
   if (clicked.nodeName === 'SECTION' || clicked.parentNode.nodeName === 'SECTION' || clicked === previousTarget || clicked.parentNode.classList.contains('selected') || clicked.parentNode.classList.contains('match')) {
-    return;
+    return
   }
 
-
   if (count < 2) {
-    count++;
+    count++
 
     if (count === 1) {
-      firstGuess = clicked.parentNode.dataset.name;
+      firstGuess = clicked.parentNode.dataset.name
 
-      clicked.parentNode.classList.add('selected');
+      clicked.parentNode.classList.add('selected')
     } else {
-      secondGuess = clicked.parentNode.dataset.name;
+      secondGuess = clicked.parentNode.dataset.name
 
-      clicked.parentNode.classList.add('selected');
-      jogadas++;
-      changeJogadas();
+      clicked.parentNode.classList.add('selected')
+      jogadas++
+      changeJogadas()
     }
 
     if (firstGuess && secondGuess) {
       if (firstGuess === secondGuess) {
-        match();
-        matches++;
+        match()
+        matches++
       } else {
-        setTimeout(removeSelected, delayByLevel[level]);
+        setTimeout(removeSelected, delayByLevel[level])
       }
-      checkEndGame();
+      checkEndGame()
     }
-    previousTarget = clicked;
+    previousTarget = clicked
   }
-});
+})
 
+let startGame = function startGame () {
+  const gameSection = document.querySelector('#js-game-section')
+  gameSection.classList.add('hidden')
+  gameSection.classList.add('active')
+  let shuffledArray = cardsArray.sort(() => 0.5 - Math.random())
+  let selectedArray = shuffledArray.slice(0, cardsByLevel[level])
 
-var startGame = function startGame() {
+  let gameGrid = selectedArray.concat(selectedArray).sort(function () {
+    return 0.5 - Math.random()
+  })
 
-  let gameSection = document.querySelector("#js-game-section");
-  gameSection.classList.add("hidden");
-  gameSection.classList.add("active");
-  var shuffledArray = cardsArray.sort(() => 0.5 - Math.random());
-  var selectedArray = shuffledArray.slice(0, cardsByLevel[level]);
-
-
-  var gameGrid = selectedArray.concat(selectedArray).sort(function () {
-    return 0.5 - Math.random();
-  });
-
-  grid.innerHTML = "";
+  grid.innerHTML = ''
   gameGrid.forEach(function (item) {
-    var name = item.name;
-    var img = item.img;
+    let name = item.name
+    let img = item.img
 
-    var card = document.createElement('div');
-    card.classList.add('game-card');
-    card.dataset.name = name;
+    let card = document.createElement('div')
+    card.classList.add('game-card')
+    card.dataset.name = name
 
-    var front = document.createElement('div');
-    front.classList.add('front');
+    let front = document.createElement('div')
+    front.classList.add('front')
 
-    var back = document.createElement('div');
-    back.classList.add('back');
-    back.style.backgroundImage = 'url(' + img + ')';
+    let back = document.createElement('div')
+    back.classList.add('back')
+    back.style.backgroundImage = 'url(' + img + ')'
 
-    grid.appendChild(card);
-    card.appendChild(front);
-    card.appendChild(back);
-  });
-
+    grid.appendChild(card)
+    card.appendChild(front)
+    card.appendChild(back)
+  })
 }
 
 /*
 * End Game
 */
 // TODO: Adicionar lógico de fim de jogo (animação)
-var endGame = function endGame() {
-  var finalJogadas = document.getElementById('finalJogadas');
-  finalJogadas.innerHTML = jogadas;
-  var finalTempo = document.getElementById('finalTempo');
+let endGame = function endGam () {
+  let finalJogadas = document.getElementById('finalJogadas')
+  finalJogadas.innerHTML = jogadas
+  let finalTempo = document.getElementById('finalTempo')
   finalTempo.innerHTML = minute.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }) +
-    ":" +
-    second.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
+    ':' +
+    second.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })
 
-  clearTimeout(interval);
-  showModal();
+  clearTimeout(interval)
+  showModal()
 }
 
-var checkEndGame = function checkEndGame() {
-  var number_plays = cardsByLevel[level];
-  if (number_plays === matches) {
-    endGame();
+let checkEndGame = function checkEndGame () {
+  let numberPlays = cardsByLevel[level]
+  if (numberPlays === matches) {
+    endGame()
   } else {
-    console.log(matches + ' matches');
+    console.log(matches + ' matches')
   }
 }
 
 const getTwoRandomJobs = () => {
-  const popupJobImg = document.querySelectorAll(".js-popup-job");
+  const popupJobImg = document.querySelectorAll('.js-popup-job')
 
   popupJobImg.forEach(
     img => {
@@ -184,158 +175,139 @@ const getTwoRandomJobs = () => {
 /*
 * Reset
 */
-var resetButton = document.getElementById('reset');
+let resetButton = document.getElementById('reset')
 resetButton.addEventListener('click', function () {
-  gameSetup();
-});
-
+  gameSetup()
+})
 
 /*
 * Difficulty
 */
-var level = 'easy';
-var cardsByLevel = {
-  'easy': 3,
-  'medium': 6,
-  'hard': 9
+let level = 'easy'
+let cardsByLevel = {
+  easy: 3,
+  medium: 6,
+  hard: 9
 }
 var delayByLevel = {
-  'easy': 1200,
-  'medium': 800,
-  'hard': 600
+  easy: 1200,
+  medium: 800,
+  hard: 600
 }
 
-var difficulty = document.getElementById('difficulty');
+let difficulty = document.getElementById('difficulty')
 difficulty.addEventListener('click', function (event) {
-  var clicked = event.target;
+  let clicked = event.target
 
   if (clicked.id === 'easy' || clicked.id === 'medium' || clicked.id === 'hard') {
     level = clicked.id
 
-    let game = document.querySelector('#game')
+    const game = document.querySelector('#game')
     game.classList.add('game-running')
     game.classList.remove('game-hidden')
 
-    let trackers = document.querySelector('#trackers')
-    trackers.classList.remove('trackers-hidden');
+    const trackers = document.querySelector('#trackers')
+    trackers.classList.remove('trackers-hidden')
 
-    let difficulty = document.querySelector('#difficulty');
-    difficulty.classList.add('difficulty-hidden');
+    const difficulty = document.querySelector('#difficulty')
+    difficulty.classList.add('difficulty-hidden')
 
-    let gameGrid = document.querySelector('#jogo .grid')
+    const gameGrid = document.querySelector('#jogo .grid')
     gameGrid.classList.remove('easy', 'medium', 'hard')
     gameGrid.classList.add(level)
 
     gameSetup();
   }
-
-});
-
+})
 
 /*
 * Timer
 */
-var timer = document.getElementById("timer");
-var second = 0, minute = 0, hour = 0;
-var interval;
+let timer = document.getElementById('timer')
+let second = 0 
+let minute = 0
+let hour = 0 
+let interval
 
-var startTimer = function startTimer() {
+let startTimer = function startTimer () {
   if (!interval) {
     interval = setInterval(function () {
-      second++;
+      second++
       timer.innerHTML = minute.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }) +
-        ":" +
-        second.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
+        ':' +
+        second.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })
 
-      if (second == 60) {
-        minute++;
-        second = 0;
+      if (second === 60) {
+        minute++
+        second = 0
       }
-      if (minute == 60) {
-        hour++;
+      if (minute === 60) {
+        hour++
         minute = 0;
       }
-    }, 1000);
+    }, 1000)
   }
-
 }
 
-var resetTimer = function resetTimer() {
-  second = 0;
-  minute = 0;
-  hour = 0;
-  timer.innerHTML = "00:00";
+var resetTimer = function resetTimer () {
+  second = 0
+  minute = 0
+  timer.innerHTML = '00:00'
 }
-
 
 /*
 * Jogadas
 */
-var jogadas = 0;
-var jogadasElement = document.getElementById('jogadas');
+let jogadas = 0;
+let jogadasElement = document.getElementById('jogadas')
 
-var changeJogadas = function changeJogadas() {
-  jogadasElement.innerHTML = jogadas;
+var changeJogadas = function changeJogadas () {
+  jogadasElement.innerHTML = jogadas
 }
 
-var resetJogadas = () => {
-  jogadas = 0;
-  jogadasElement.innerHTML = jogadas;
+let resetJogadas = () => {
+  jogadas = 0
+  jogadasElement.innerHTML = jogadas
 }
 
-function resetMatches() {
-  matches = 0;
+function resetMatches () {
+  matches = 0
 }
 
 /*
 * Modal
 */
-function showModal() {
+function showModal () {
   // Pick two job images at random
   getTwoRandomJobs()
 
-  let modal = document.getElementById("popup_jogo");
-  modal.classList.add("show");
+  const modal = document.getElementById('popup_jogo')
+  modal.classList.add('show')
 }
 
 function playAgain() {
-  let modal = document.getElementById("popup_jogo");
-  modal.classList.remove("show");
-  let difficulty = document.querySelector('#difficulty');
-  difficulty.classList.remove('difficulty-hidden');
-  let game = document.querySelector('#game');
+  const modal = document.getElementById ('popup_jogo')
+  modal.classList.remove('show')
+  const difficulty = document.querySelector('#difficulty')
+  difficulty.classList.remove('difficulty-hidden')
+  const game = document.querySelector('#game')
   game.classList.remove('game-running')
   game.classList.add('game-hidden')
-  let trackers = document.querySelector('#trackers')
-  trackers.classList.add('trackers-hidden');
-  let gameSection = document.querySelector("#js-game-section");
-  gameSection.classList.remove("hidden");
-  gameSection.classList.remove("active");
-  interval = "";
-  grid.innerHTML = "";
-  resetMatches();
-  resetJogadas();
-  // resetTimer();
-  // startTimer();
-
-  //gameSetup();
+  const trackers = document.querySelector('#trackers')
+  trackers.classList.add('trackers-hidden')
+  const gameSection = document.querySelector("#js-game-section")
+  gameSection.classList.remove('hidden')
+  gameSection.classList.remove('active')
+  interval = ''
+  grid.innerHTML = ''
+  resetMatches()
+  resetJogadas()
 }
 
-function gameSetup() {
-  startGame();
-  resetMatches();
-  resetJogadas();
-  resetTimer();
-  startTimer();
+function gameSetup () {
+  startGame()
+  resetMatches()
+  resetJogadas()
+  resetTimer()
+  startTimer()
 }
-
-function playAgainLevels() {
-  clearTimeout(interval);
-  playAgain();
-  // resetTimer();
-  // startTimer();
-  //gameSetup();
-}
-
-
-

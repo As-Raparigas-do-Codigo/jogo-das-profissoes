@@ -302,10 +302,6 @@ function playAgain() {
   grid.innerHTML = ''
   resetMatches()
   resetJogadas()
-  // resetTimer();
-  // startTimer();
-
-  // gameSetup();
 }
 
 function gameSetup () {

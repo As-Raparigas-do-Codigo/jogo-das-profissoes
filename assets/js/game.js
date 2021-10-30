@@ -226,7 +226,6 @@ difficulty.addEventListener('click', function (event) {
 const timer = document.getElementById('timer')
 let second = 0
 let minute = 0
-let hour = 0
 let interval
 
 const startTimer = function startTimer () {

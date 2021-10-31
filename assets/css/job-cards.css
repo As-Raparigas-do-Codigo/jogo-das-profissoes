@@ -118,7 +118,7 @@ h1.title {
     transform: scale(0);
     opacity: 0.2;
   }
-  
+
   100% {
     -webkit-transform: scale(20);
     transform: scale(20);

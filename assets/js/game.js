@@ -156,8 +156,6 @@ const checkEndGame = function checkEndGame () {
   const numberPlays = cardsByLevel[level]
   if (numberPlays === matches) {
     endGame()
-  } else {
-    console.log(matches + ' matches')
   }
 }
 

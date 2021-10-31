@@ -283,7 +283,7 @@ function showModal () {
 
 function playAgain () {
   const modal = document.getElementById('popup_jogo')
-  modal.classList.remove('show');
+  modal.classList.remove('show')
   const difficulty = document.querySelector('#difficulty')
   difficulty.classList.remove('difficulty-hidden')
   const game = document.querySelector('#game')

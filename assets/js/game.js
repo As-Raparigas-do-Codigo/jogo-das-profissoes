@@ -156,8 +156,6 @@ const checkEndGame = function checkEndGame () {
   const numberPlays = cardsByLevel[level]
   if (numberPlays === matches) {
     endGame()
-  } else {
-    console.log(matches + ' matches')
   }
 }
 
@@ -283,10 +281,34 @@ function showModal () {
   modal.classList.add('show')
 }
 
+function playAgain () {
+  const modal = document.getElementById('popup_jogo')
+  modal.classList.remove('show')
+  const difficulty = document.querySelector('#difficulty')
+  difficulty.classList.remove('difficulty-hidden')
+  const game = document.querySelector('#game')
+  game.classList.remove('game-running')
+  game.classList.add('game-hidden')
+  const trackers = document.querySelector('#trackers')
+  trackers.classList.add('trackers-hidden')
+  const gameSection = document.querySelector('#js-game-section')
+  gameSection.classList.remove('hidden')
+  gameSection.classList.remove('active')
+  interval = ''
+  grid.innerHTML = ''
+  resetMatches()
+  resetJogadas()
+}
+
 function gameSetup () {
   startGame()
   resetMatches()
   resetJogadas()
   resetTimer()
   startTimer()
+}
+
+function playAgainLevels () {
+  clearTimeout(interval)
+  playAgain()
 }

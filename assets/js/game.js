@@ -307,3 +307,8 @@ function gameSetup () {
   resetTimer()
   startTimer()
 }
+
+function playAgainLevels () {
+  clearTimeout(interval);
+  playAgain();
+}

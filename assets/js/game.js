@@ -283,12 +283,12 @@ function showModal () {
   modal.classList.add('show')
 }
 
-function playAgain() {
-  const modal = document.getElementById('popup_jogo');
+function playAgain () {
+  const modal = document.getElementById('popup_jogo')
   modal.classList.remove('show');
-  const difficulty = document.querySelector('#difficulty');
-  difficulty.classList.remove('difficulty-hidden');
-  const game = document.querySelector('#game');
+  const difficulty = document.querySelector('#difficulty')
+  difficulty.classList.remove('difficulty-hidden')
+  const game = document.querySelector('#game')
   game.classList.remove('game-running')
   game.classList.add('game-hidden')
   const trackers = document.querySelector('#trackers')
@@ -308,9 +308,4 @@ function gameSetup () {
   resetJogadas()
   resetTimer()
   startTimer()
-}
-
-function playAgainLevels() {
-  clearTimeout(interval)
-  playAgain()
 }

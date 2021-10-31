@@ -284,22 +284,22 @@ function showModal () {
 }
 
 function playAgain() {
-  let modal = document.getElementById("popup_jogo");
-  modal.classList.remove("show");
-  let difficulty = document.querySelector('#difficulty');
+  const modal = document.getElementById('popup_jogo');
+  modal.classList.remove('show');
+  const difficulty = document.querySelector('#difficulty');
   difficulty.classList.remove('difficulty-hidden');
-  let game = document.querySelector('#game');
+  const game = document.querySelector('#game');
   game.classList.remove('game-running')
   game.classList.add('game-hidden')
-  let trackers = document.querySelector('#trackers')
-  trackers.classList.add('trackers-hidden');
-  let gameSection = document.querySelector("#js-game-section");
-  gameSection.classList.remove("hidden");
-  gameSection.classList.remove("active");
-  interval = "";
-  grid.innerHTML = "";
-  resetMatches();
-  resetJogadas();
+  const trackers = document.querySelector('#trackers')
+  trackers.classList.add('trackers-hidden')
+  const gameSection = document.querySelector('#js-game-section')
+  gameSection.classList.remove('hidden')
+  gameSection.classList.remove('active')
+  interval = ''
+  grid.innerHTML = ''
+  resetMatches()
+  resetJogadas()
 }
 
 function gameSetup () {
@@ -311,6 +311,6 @@ function gameSetup () {
 }
 
 function playAgainLevels() {
-  clearTimeout(interval);
-  playAgain();
+  clearTimeout(interval)
+  playAgain()
 }

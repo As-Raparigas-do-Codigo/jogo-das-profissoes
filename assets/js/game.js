@@ -309,6 +309,6 @@ function gameSetup () {
 }
 
 function playAgainLevels () {
-  clearTimeout(interval);
-  playAgain();
+  clearTimeout(interval)
+  playAgain()
 }

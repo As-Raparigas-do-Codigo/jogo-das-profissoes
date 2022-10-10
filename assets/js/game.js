@@ -1,37 +1,7 @@
 'use strict'
 
-const cardsArray = [{
-  name: 'astronauta',
-  img: 'assets/img/jobs/astronauta.png'
-}, /* {
-  'name': 'babysitter',
-  'img': 'assets/img/jobs/babysitter.png'
-}, */ {
-  name: 'bailarino',
-  img: 'assets/img/jobs/bailarino.png'
-}, {
-  name: 'ceo',
-  img: 'assets/img/jobs/ceo.png'
-}, {
-  name: 'enfermeiro',
-  img: 'assets/img/jobs/enfermeiro.png'
-}, {
-  name: 'engenheira',
-  img: 'assets/img/jobs/engenheira.png'
-}, {
-  name: 'footballer',
-  img: 'assets/img/jobs/futebolista.png'
-}, {
-  name: 'piloto',
-  img: 'assets/img/jobs/piloto.png'
-}, {
-  name: 'professor',
-  img: 'assets/img/jobs/professor.png'
-}, {
-  name: 'veterinario',
-  img: 'assets/img/jobs/veterinario.png'
-}
-]
+$.getJSON( "./assets/data/cardsJSON.json", function( cardsData ) {
+  const cardsArray = cardsData;
 
 let firstGuess = ''
 let secondGuess = ''
@@ -312,3 +282,5 @@ function playAgainLevels () {
   clearTimeout(interval)
   playAgain()
 }
+
+});

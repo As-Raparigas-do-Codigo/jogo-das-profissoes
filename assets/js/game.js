@@ -128,9 +128,9 @@ $.getJSON("./assets/data/cardsJSON.json", function (cardsData) {
     clearTimeout(interval)
 
     //Timeout de 1segundo, após jogo terminado, para demonstrar div 'popup'
-    setTimeout(() => { 
+    setTimeout(() => {
       showModal();
-     }, "1000")
+    }, "1000")
   }
 
   const checkEndGame = function checkEndGame() {
@@ -159,7 +159,33 @@ $.getJSON("./assets/data/cardsJSON.json", function (cardsData) {
     gameSetup()
   })
 
-  /*
+
+  /**
+  * Play again
+  */
+  const playAgainButton = document.getElementById('jogar-de-novo')
+  playAgainButton.addEventListener('click', function () {
+    playAgain();
+  })
+
+  /**
+   * Leave Game
+   */
+  const LeaveButton = document.getElementById('sair-do-jogo')
+  LeaveButton.addEventListener('click', function () {
+    playAgain();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  })
+
+  /**
+ * Níveis
+ */
+  const niveisButton = document.getElementById('niveis')
+  niveisButton.addEventListener('click', function () {
+    playAgainLevels();
+  })
+
+  /**
   * Difficulty
   */
   let level = 'easy'

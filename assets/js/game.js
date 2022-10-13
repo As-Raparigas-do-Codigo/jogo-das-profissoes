@@ -72,7 +72,7 @@ $.getJSON("./assets/data/cardsJSON.json", function (cardsData) {
         let gameCardCount = document.querySelectorAll('.game-card').length;
         let gameCardMatched = document.querySelectorAll('.match').length;
 
-        if (gameCardCount == gameCardMatched) {
+        if (gameCardCount === gameCardMatched) {
           checkEndGame()
         }
       }

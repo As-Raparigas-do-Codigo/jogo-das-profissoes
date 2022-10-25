@@ -158,6 +158,31 @@ $.getJSON("./assets/data/cardsJSON.json", function (cardsData) {
   resetButton.addEventListener('click', function () {
     gameSetup()
   })
+  
+    /**
+  * Play again
+  */
+  const playAgainButton = document.getElementById('jogar-de-novo')
+  playAgainButton.addEventListener('click', function () {
+    playAgain();
+  })
+
+  /**
+   * Leave Game
+   */
+  const LeaveButton = document.getElementById('sair-do-jogo')
+  LeaveButton.addEventListener('click', function () {
+    playAgain();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  })
+
+  /**
+ * Níveis
+ */
+  const niveisButton = document.getElementById('niveis')
+  niveisButton.addEventListener('click', function () {
+    playAgainLevels();
+  })
 
   /*
   * Difficulty
@@ -231,12 +256,13 @@ $.getJSON("./assets/data/cardsJSON.json", function (cardsData) {
     minute = 0
     timer.innerHTML = '00:00'
   }
-
+  
   /*
   * Jogadas
   */
   let jogadas = 0
   const jogadasElement = document.getElementById('jogadas')
+
 
   const changeJogadas = function changeJogadas() {
     jogadasElement.innerHTML = jogadas

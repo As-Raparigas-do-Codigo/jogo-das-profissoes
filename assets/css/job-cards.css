@@ -2,8 +2,8 @@
 :root {
   --white: #fff;
   --color-text-primary: #828282;
-  --color-text-secondary: #333333;
-  --color-primary: #FDC435;
+  --color-text-secondary: #333;
+  --color-primary: #fdc435;
 }
 
 .btn {
@@ -26,7 +26,6 @@
   text-align: center;
   font-family: "Nunito", sans-serif;
 }
-
 
 .slides {
   position: relative;
@@ -94,6 +93,7 @@ h1.title {
   justify-content: space-between;
   margin: 0 -12px -12px;
 }
+
 [ripple] {
   z-index: 1;
   position: relative;
@@ -111,24 +111,28 @@ h1.title {
   -webkit-animation: ripple 2s;
   animation: ripple 2s;
 }
+
 @-webkit-keyframes ripple {
   0% {
     -webkit-transform: scale(0);
     transform: scale(0);
     opacity: 0.2;
   }
+
   100% {
     -webkit-transform: scale(20);
     transform: scale(20);
     opacity: 0;
   }
 }
+
 @keyframes ripple {
   0% {
     -webkit-transform: scale(0);
     transform: scale(0);
     opacity: 0.2;
   }
+
   100% {
     -webkit-transform: scale(20);
     transform: scale(20);

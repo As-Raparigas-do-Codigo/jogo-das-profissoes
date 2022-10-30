@@ -616,6 +616,12 @@ img.logo-support {
   color: black;
 }
 
+@media (max-width: 768px) {
+  .footer-text {
+    padding: 0px 15px;
+  }
+}
+
 .copy-logo {
   width: 25px;
   height: 25px;

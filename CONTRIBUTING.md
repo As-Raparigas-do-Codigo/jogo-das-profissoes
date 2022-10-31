@@ -22,7 +22,7 @@
     - Garante que não és atribuída a mais do que um issue ao mesmo tempo;
 3. Um dos mentores **atribuirá** esse issue ao utilizador com o primeiro comentário;
 4. Quando o issue te for atribuído, faz **fork** do projecto - vê [aqui](https://github.com/As-Raparigas-do-Codigo/Recursos/blob/main/Git/Como_fazer_fork.md) como;
-5. Cria um **novo branch** no projecto que bifurcaste - vê [aqui](https://docs.github.com/pt/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) como;
+5. Cria um **novo branch** no projecto que bifurcaste - vê [aqui](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository) como;
     - Garante que lhe dás um nome descritivo, ex.: "adicionar-botao-home"
 6. Tenta fazer **commits** com regularidade e escreve mensagens descritivas, ex.: "adiciona botão azul à página inicial";
 7. Quando terminares o teu trabalho faz um Pull Request (PR) para o branch `main` do repositório original - vê [aqui](https://docs.github.com/pt/github/getting-started-with-github/quickstart/fork-a-repo) como;

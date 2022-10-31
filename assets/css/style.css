@@ -544,8 +544,11 @@ span.play-button {
 
 @media (max-width: 767px) {
 	.container {
-		margin: auto;
+		
 		text-align: center;
+	}
+	.row {
+		margin: auto;
 	}
   }
 

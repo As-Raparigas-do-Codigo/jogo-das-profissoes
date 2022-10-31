@@ -542,6 +542,14 @@ span.play-button {
   color: #fdc134;
 }
 
+@media (max-width: 767px) {
+	.container {
+		margin: auto;
+		text-align: center;
+	}
+  }
+
+
 /* --------------------------------------------------------------
 # Contacts Menu
 -------------------------------------------------------------- */

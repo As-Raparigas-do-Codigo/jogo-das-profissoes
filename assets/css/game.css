@@ -41,6 +41,14 @@
   grid-template-columns: repeat(6, 1fr);
 }
 
+@media screen and (max-width: 1366px) {
+  .hard,
+  .medium,
+  .easy {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hard,
   .medium,
